@@ -37,42 +37,42 @@ namespace CodeGenerator
         {
             return new List<string>
             {
-                "Frankrike_Sydkorea",
-                "Tyskland_Kina",
-                "Spanien_Sydafrika",
-                "Norge_Nigeria",
-                "Australien_Italien",
-                "Brasilien_Jamaica",
+                "Turkiet_Italien",
+                "Wales_Schweiz",
+                "Danmark_Finland",
+                "Belgien_Ryssland",
+                "England_Kroatien",
+                "Österrike_Nordmakedonien",
+                "Nederländerna_Ukraina",
+                "Skottland_Tjeckien",
+                "Polen_Slovakien",
+                "Spanien_Sverige",
+                "Ungern_Portugal",
+                "Frankrike_Tyskland",
+                "Finland_Ryssland",
+                "Turkiet_Wales",
+                "Italien_Schweiz",
+                "Ukraina_Nordmakedonien",
+                "Danmark_Belgien",
+                "Nederländerna_Österrike",
+                "Sverige_Slovakien",
+                "Kroatien_Tjeckien",
                 "England_Skottland",
-                "Argentina_Japan",
-                "Kanada_Kamerun",
-                "Nya Zeeland_Nederländerna",
-                "Chile_Sverige",
-                "Usa_Thailand",
-                "Nigeria_Sydkorea",
-                "Tyskland_Spanien",
-                "Frankrike_Norge",
-                "Australien_Brasilien",
-                "Sydafrika_Kina",
-                "Japan_Skottland",
-                "Jamaica_Italien",
-                "England_Argentina",
-                "Nederländerna_Kamerun",
-                "Kanada_Nya Zeeland",
-                "Sverige_Thailand",
-                "Usa_Chile",
-                "Kina_Spanien",
-                "Sydafrika_Tyskland",
-                "Nigeria_Frankrike",
-                "Sydkorea_Norge",
-                "Italien_Brasilien",
-                "Jamaica_Australien",
-                "Japan_England",
-                "Skottland_Argentina",
-                "Nederländerna_Kanada",
-                "Kamerun_Nya Zeeland",
-                "Sverige_Usa",
-                "Thailand_Chile",
+                "Ungern_Frankrike",
+                "Portugal_Tyskland",
+                "Spanien_Polen",
+                "Italien_Wales",
+                "Schweiz_Turkiet",
+                "Nordmakedonien_Nederländerna",
+                "Ukraina_Österrike",
+                "Ryssland_Danmark",
+                "Finland_Belgien",
+                "Tjeckien_England",
+                "Kroatien_Skottland",
+                "Slovakien_Spaninen",
+                "Sverige_Polen",
+                "Tyskland_Ungern",
+                "Portugal_Frankrike"
             };
         }
 
@@ -80,30 +80,30 @@ namespace CodeGenerator
         {
             var list = new List<string>
             {
-                "Frankrike",
-                "Sydkorea",
-                "Tyskland",
-                "Kina",
-                "Spanien",
-                "Sydafrika",
-                "Norge",
-                "Nigeria",
-                "Australien",
-                "Italien",
-                "Brasilien",
-                "Jamaica",
+                "Belgien",
+                "Danmark",
                 "England",
-                "Skottland",
-                "Argentina",
-                "Japan",
-                "Kanada",
-                "Kamerun",
-                "Nya Zeeland",
+                "Finland",
+                "Frankrike",
+                "Italien",
+                "Kroatien",
                 "Nederländerna",
-                "Chile",
+                "Nordmakedonien",
+                "Polen",
+                "Portugal",
+                "Ryssland",
+                "Schweiz",
+                "Skottland",
+                "Slovakien",
+                "Spanien",
                 "Sverige",
-                "Usa",
-                "Thailand"
+                "Tjeckien",
+                "Turkiet",
+                "Tyskland",
+                "Ukraina",
+                "Ungern",
+                "Wales",
+                "Österrike"
             };
 
             list = list.OrderBy(l => l).ToList();
@@ -185,9 +185,9 @@ namespace CodeGenerator
 
         private static void IndexCshtml_SaveResultsTextBoxFor(List<string> games)
         {
-              //  < th >
-              //      @Html.TextBoxFor(m => m.Ryssland_Saudiarabien)
-              //  </ th >
+            //  < th >
+            //      @Html.TextBoxFor(m => m.Ryssland_Saudiarabien)
+            //  </ th >
 
             string filename = FOLDERPATH + "IndexCshtml_SaveResultsTextBoxFor.txt";
             using (var tw = new StreamWriter(filename, true))
