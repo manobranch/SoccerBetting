@@ -27,42 +27,42 @@
           <Property Name="Finallag1" Type="nvarchar" MaxLength="50" />
           <Property Name="Finallag2" Type="nvarchar" MaxLength="50" />
           <Property Name="Vinnare" Type="nvarchar" MaxLength="50" />
-          <Property Name="Frankrike-Sydkorea" Type="nvarchar" MaxLength="50" />
-          <Property Name="Tyskland-Kina" Type="nvarchar" MaxLength="50" />
-          <Property Name="Spanien-Sydafrika" Type="nvarchar" MaxLength="50" />
-          <Property Name="Norge-Nigeria" Type="nvarchar" MaxLength="50" />
-          <Property Name="Australien-Italien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Brasilien-Jamaica" Type="nvarchar" MaxLength="50" />
+          <Property Name="Turkiet-Italien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Wales-Schweiz" Type="nvarchar" MaxLength="50" />
+          <Property Name="Danmark-Finland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Belgien-Ryssland" Type="nvarchar" MaxLength="50" />
+          <Property Name="England-Kroatien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Österrike-Nordmakedonien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nederländerna-Ukraina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Skottland-Tjeckien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Polen-Slovakien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Spanien-Sverige" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ungern-Portugal" Type="nvarchar" MaxLength="50" />
+          <Property Name="Frankrike-Tyskland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Finland-Ryssland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Turkiet-Wales" Type="nvarchar" MaxLength="50" />
+          <Property Name="Italien-Schweiz" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ukraina-Nordmakedonien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Danmark-Belgien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nederländerna-Österrike" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sverige-Slovakien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kroatien-Tjeckien" Type="nvarchar" MaxLength="50" />
           <Property Name="England-Skottland" Type="nvarchar" MaxLength="50" />
-          <Property Name="Argentina-Japan" Type="nvarchar" MaxLength="50" />
-          <Property Name="Kanada-Kamerun" Type="nvarchar" MaxLength="50" />
-          <Property Name="NyaZeeland-Nederländerna" Type="nvarchar" MaxLength="50" />
-          <Property Name="Chile-Sverige" Type="nvarchar" MaxLength="50" />
-          <Property Name="Usa-Thailand" Type="nvarchar" MaxLength="50" />
-          <Property Name="Nigeria-Sydkorea" Type="nvarchar" MaxLength="50" />
-          <Property Name="Tyskland-Spanien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Frankrike-Norge" Type="nvarchar" MaxLength="50" />
-          <Property Name="Australien-Brasilien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sydafrika-Kina" Type="nvarchar" MaxLength="50" />
-          <Property Name="Japan-Skottland" Type="nvarchar" MaxLength="50" />
-          <Property Name="Jamaica-Italien" Type="nvarchar" MaxLength="50" />
-          <Property Name="England-Argentina" Type="nvarchar" MaxLength="50" />
-          <Property Name="Nederländerna-Kamerun" Type="nvarchar" MaxLength="50" />
-          <Property Name="Kanada-NyaZeeland" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sverige-Thailand" Type="nvarchar" MaxLength="50" />
-          <Property Name="Usa-Chile" Type="nvarchar" MaxLength="50" />
-          <Property Name="Kina-Spanien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sydafrika-Tyskland" Type="nvarchar" MaxLength="50" />
-          <Property Name="Nigeria-Frankrike" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sydkorea-Norge" Type="nvarchar" MaxLength="50" />
-          <Property Name="Italien-Brasilien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Jamaica-Australien" Type="nvarchar" MaxLength="50" />
-          <Property Name="Japan-England" Type="nvarchar" MaxLength="50" />
-          <Property Name="Skottland-Argentina" Type="nvarchar" MaxLength="50" />
-          <Property Name="Nederländerna-Kanada" Type="nvarchar" MaxLength="50" />
-          <Property Name="Kamerun-NyaZeeland" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sverige-Usa" Type="nvarchar" MaxLength="50" />
-          <Property Name="Thailand-Chile" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ungern-Frankrike" Type="nvarchar" MaxLength="50" />
+          <Property Name="Portugal-Tyskland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Spanien-Polen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Italien-Wales" Type="nvarchar" MaxLength="50" />
+          <Property Name="Schweiz-Turkiet" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nordmakedonien-Nederländerna" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ukraina-Österrike" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ryssland-Danmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="Finland-Belgien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tjeckien-England" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kroatien-Skottland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Slovakien-Spaninen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sverige-Polen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tyskland-Ungern" Type="nvarchar" MaxLength="50" />
+          <Property Name="Portugal-Frankrike" Type="nvarchar" MaxLength="50" />
           <Property Name="EntryDate" Type="datetime2" Precision="7" />
         </EntityType>
         <EntityType Name="TipsPathToPDFs">
@@ -139,42 +139,42 @@
           <Property Name="Finallag1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Finallag2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Vinnare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Frankrike_Sydkorea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Tyskland_Kina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Spanien_Sydafrika" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Norge_Nigeria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Australien_Italien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Brasilien_Jamaica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Turkiet_Italien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Wales_Schweiz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Danmark_Finland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Belgien_Ryssland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="England_Kroatien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Österrike_Nordmakedonien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nederländerna_Ukraina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Skottland_Tjeckien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Polen_Slovakien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Spanien_Sverige" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ungern_Portugal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Frankrike_Tyskland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Finland_Ryssland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Turkiet_Wales" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Italien_Schweiz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ukraina_Nordmakedonien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Danmark_Belgien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nederländerna_Österrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sverige_Slovakien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kroatien_Tjeckien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="England_Skottland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Argentina_Japan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Kanada_Kamerun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="NyaZeeland_Nederländerna" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Chile_Sverige" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Usa_Thailand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Nigeria_Sydkorea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Tyskland_Spanien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Frankrike_Norge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Australien_Brasilien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sydafrika_Kina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Japan_Skottland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Jamaica_Italien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="England_Argentina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Nederländerna_Kamerun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Kanada_NyaZeeland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sverige_Thailand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Usa_Chile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Kina_Spanien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sydafrika_Tyskland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Nigeria_Frankrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sydkorea_Norge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Italien_Brasilien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Jamaica_Australien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Japan_England" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Skottland_Argentina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Nederländerna_Kanada" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Kamerun_NyaZeeland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sverige_Usa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Thailand_Chile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ungern_Frankrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Portugal_Tyskland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Spanien_Polen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Italien_Wales" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Schweiz_Turkiet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nordmakedonien_Nederländerna" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ukraina_Österrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ryssland_Danmark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Finland_Belgien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tjeckien_England" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kroatien_Skottland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Slovakien_Spaninen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sverige_Polen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tyskland_Ungern" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Portugal_Frankrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EntryDate" Type="DateTime" Precision="7" />
         </EntityType>
       </Schema>
@@ -217,42 +217,42 @@
             <EntityTypeMapping TypeName="MartinDatabaseModel.TipsData">
               <MappingFragment StoreEntitySet="TipsDatas">
                 <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
-                <ScalarProperty Name="Thailand_Chile" ColumnName="Thailand-Chile" />
-                <ScalarProperty Name="Sverige_Usa" ColumnName="Sverige-Usa" />
-                <ScalarProperty Name="Kamerun_NyaZeeland" ColumnName="Kamerun-NyaZeeland" />
-                <ScalarProperty Name="Nederländerna_Kanada" ColumnName="Nederländerna-Kanada" />
-                <ScalarProperty Name="Skottland_Argentina" ColumnName="Skottland-Argentina" />
-                <ScalarProperty Name="Japan_England" ColumnName="Japan-England" />
-                <ScalarProperty Name="Jamaica_Australien" ColumnName="Jamaica-Australien" />
-                <ScalarProperty Name="Italien_Brasilien" ColumnName="Italien-Brasilien" />
-                <ScalarProperty Name="Sydkorea_Norge" ColumnName="Sydkorea-Norge" />
-                <ScalarProperty Name="Nigeria_Frankrike" ColumnName="Nigeria-Frankrike" />
-                <ScalarProperty Name="Sydafrika_Tyskland" ColumnName="Sydafrika-Tyskland" />
-                <ScalarProperty Name="Kina_Spanien" ColumnName="Kina-Spanien" />
-                <ScalarProperty Name="Usa_Chile" ColumnName="Usa-Chile" />
-                <ScalarProperty Name="Sverige_Thailand" ColumnName="Sverige-Thailand" />
-                <ScalarProperty Name="Kanada_NyaZeeland" ColumnName="Kanada-NyaZeeland" />
-                <ScalarProperty Name="Nederländerna_Kamerun" ColumnName="Nederländerna-Kamerun" />
-                <ScalarProperty Name="England_Argentina" ColumnName="England-Argentina" />
-                <ScalarProperty Name="Jamaica_Italien" ColumnName="Jamaica-Italien" />
-                <ScalarProperty Name="Japan_Skottland" ColumnName="Japan-Skottland" />
-                <ScalarProperty Name="Sydafrika_Kina" ColumnName="Sydafrika-Kina" />
-                <ScalarProperty Name="Australien_Brasilien" ColumnName="Australien-Brasilien" />
-                <ScalarProperty Name="Frankrike_Norge" ColumnName="Frankrike-Norge" />
-                <ScalarProperty Name="Tyskland_Spanien" ColumnName="Tyskland-Spanien" />
-                <ScalarProperty Name="Nigeria_Sydkorea" ColumnName="Nigeria-Sydkorea" />
-                <ScalarProperty Name="Usa_Thailand" ColumnName="Usa-Thailand" />
-                <ScalarProperty Name="Chile_Sverige" ColumnName="Chile-Sverige" />
-                <ScalarProperty Name="NyaZeeland_Nederländerna" ColumnName="NyaZeeland-Nederländerna" />
-                <ScalarProperty Name="Kanada_Kamerun" ColumnName="Kanada-Kamerun" />
-                <ScalarProperty Name="Argentina_Japan" ColumnName="Argentina-Japan" />
+                <ScalarProperty Name="Portugal_Frankrike" ColumnName="Portugal-Frankrike" />
+                <ScalarProperty Name="Tyskland_Ungern" ColumnName="Tyskland-Ungern" />
+                <ScalarProperty Name="Sverige_Polen" ColumnName="Sverige-Polen" />
+                <ScalarProperty Name="Slovakien_Spaninen" ColumnName="Slovakien-Spaninen" />
+                <ScalarProperty Name="Kroatien_Skottland" ColumnName="Kroatien-Skottland" />
+                <ScalarProperty Name="Tjeckien_England" ColumnName="Tjeckien-England" />
+                <ScalarProperty Name="Finland_Belgien" ColumnName="Finland-Belgien" />
+                <ScalarProperty Name="Ryssland_Danmark" ColumnName="Ryssland-Danmark" />
+                <ScalarProperty Name="Ukraina_Österrike" ColumnName="Ukraina-Österrike" />
+                <ScalarProperty Name="Nordmakedonien_Nederländerna" ColumnName="Nordmakedonien-Nederländerna" />
+                <ScalarProperty Name="Schweiz_Turkiet" ColumnName="Schweiz-Turkiet" />
+                <ScalarProperty Name="Italien_Wales" ColumnName="Italien-Wales" />
+                <ScalarProperty Name="Spanien_Polen" ColumnName="Spanien-Polen" />
+                <ScalarProperty Name="Portugal_Tyskland" ColumnName="Portugal-Tyskland" />
+                <ScalarProperty Name="Ungern_Frankrike" ColumnName="Ungern-Frankrike" />
                 <ScalarProperty Name="England_Skottland" ColumnName="England-Skottland" />
-                <ScalarProperty Name="Brasilien_Jamaica" ColumnName="Brasilien-Jamaica" />
-                <ScalarProperty Name="Australien_Italien" ColumnName="Australien-Italien" />
-                <ScalarProperty Name="Norge_Nigeria" ColumnName="Norge-Nigeria" />
-                <ScalarProperty Name="Spanien_Sydafrika" ColumnName="Spanien-Sydafrika" />
-                <ScalarProperty Name="Tyskland_Kina" ColumnName="Tyskland-Kina" />
-                <ScalarProperty Name="Frankrike_Sydkorea" ColumnName="Frankrike-Sydkorea" />
+                <ScalarProperty Name="Kroatien_Tjeckien" ColumnName="Kroatien-Tjeckien" />
+                <ScalarProperty Name="Sverige_Slovakien" ColumnName="Sverige-Slovakien" />
+                <ScalarProperty Name="Nederländerna_Österrike" ColumnName="Nederländerna-Österrike" />
+                <ScalarProperty Name="Danmark_Belgien" ColumnName="Danmark-Belgien" />
+                <ScalarProperty Name="Ukraina_Nordmakedonien" ColumnName="Ukraina-Nordmakedonien" />
+                <ScalarProperty Name="Italien_Schweiz" ColumnName="Italien-Schweiz" />
+                <ScalarProperty Name="Turkiet_Wales" ColumnName="Turkiet-Wales" />
+                <ScalarProperty Name="Finland_Ryssland" ColumnName="Finland-Ryssland" />
+                <ScalarProperty Name="Frankrike_Tyskland" ColumnName="Frankrike-Tyskland" />
+                <ScalarProperty Name="Ungern_Portugal" ColumnName="Ungern-Portugal" />
+                <ScalarProperty Name="Spanien_Sverige" ColumnName="Spanien-Sverige" />
+                <ScalarProperty Name="Polen_Slovakien" ColumnName="Polen-Slovakien" />
+                <ScalarProperty Name="Skottland_Tjeckien" ColumnName="Skottland-Tjeckien" />
+                <ScalarProperty Name="Nederländerna_Ukraina" ColumnName="Nederländerna-Ukraina" />
+                <ScalarProperty Name="Österrike_Nordmakedonien" ColumnName="Österrike-Nordmakedonien" />
+                <ScalarProperty Name="England_Kroatien" ColumnName="England-Kroatien" />
+                <ScalarProperty Name="Belgien_Ryssland" ColumnName="Belgien-Ryssland" />
+                <ScalarProperty Name="Danmark_Finland" ColumnName="Danmark-Finland" />
+                <ScalarProperty Name="Wales_Schweiz" ColumnName="Wales-Schweiz" />
+                <ScalarProperty Name="Turkiet_Italien" ColumnName="Turkiet-Italien" />
                 <ScalarProperty Name="Vinnare" ColumnName="Vinnare" />
                 <ScalarProperty Name="Finallag2" ColumnName="Finallag2" />
                 <ScalarProperty Name="Finallag1" ColumnName="Finallag1" />
