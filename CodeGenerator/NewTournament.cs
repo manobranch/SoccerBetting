@@ -24,7 +24,10 @@ namespace CodeGenerator
         9. Open .edmx and delete the TipsData entity model. SAVE! Then add TipsData again. SAVE!
         10. Copy all automated generated files with code into the correct places
         11. See that TournamentStartTime is later than right now
-        12. Set BlobPassword and MailPassword in local file
+        12. Set in local file
+            - BlobPassword 
+            - MailPassword 
+            - Connection strings
         13. Run web site 
             - Leave a comment
             - Participate in tips
@@ -37,15 +40,18 @@ namespace CodeGenerator
         15. Check PaymentController
         16. Check Start page and see that someone payed
         17. Check TextfileController
-        18. Change TournamentStartTime in web.config
-        19. Check ResultController
-        20. Read all texts and see that they are correct
+        18. Read all texts and see that they are correct
+            - Everything on site before tournament
+            - Mail sent out
+        '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        19. Change TournamentStartTime in web.config to after tournament start
+        20. Check ResultController
+        18. Read all texts and see that they are correct
             - Everything on site before tournament
             - Everything on site after tournament start
             - Mail sent out
 
 
-        
         Deploy to 'test'        
         101. Go to web app settings/config blade and chande keys to database and blob storage if needed.
         102. Deploy

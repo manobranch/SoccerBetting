@@ -114,7 +114,6 @@ namespace Fotbollstips.Logic
                            select hits).FirstOrDefault();
 
             data = (from hits in data
-                    where hits.Id == 8 || hits.Id == 23
                     select hits).ToList();
 
             foreach (var item in data)

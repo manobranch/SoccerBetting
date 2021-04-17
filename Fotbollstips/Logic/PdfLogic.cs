@@ -61,7 +61,7 @@ namespace Fotbollstips.Logic
             yCoord = DrawTheString("Danmark - Finland", tipsData.Danmark_Finland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Belgien - Ryssland", tipsData.Belgien_Ryssland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("England - Kroatien", tipsData.England_Kroatien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Österrike - Nordmakedonien", tipsData.Österrike_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Österrike - Nordmak.", tipsData.Österrike_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Nederländerna - Ukraina", tipsData.Nederländerna_Ukraina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Skottland - Tjeckien", tipsData.Skottland_Tjeckien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Polen - Slovakien", tipsData.Polen_Slovakien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
@@ -71,7 +71,7 @@ namespace Fotbollstips.Logic
             yCoord = DrawTheString("Finland - Ryssland", tipsData.Finland_Ryssland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Turkiet - Wales", tipsData.Turkiet_Wales, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Italien - Schweiz", tipsData.Italien_Schweiz, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Ukraina - Nordmakedonien", tipsData.Ukraina_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ukraina - Nordmak.", tipsData.Ukraina_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Danmark - Belgien", tipsData.Danmark_Belgien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Nederländerna - Österrike", tipsData.Nederländerna_Österrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Sverige - Slovakien", tipsData.Sverige_Slovakien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
@@ -88,7 +88,7 @@ namespace Fotbollstips.Logic
             yCoord = DrawTheString("Spanien - Polen", tipsData.Spanien_Polen, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Italien - Wales", tipsData.Italien_Wales, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Schweiz - Turkiet", tipsData.Schweiz_Turkiet, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Nordmakedonien - Nederländerna", tipsData.Nordmakedonien_Nederländerna, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Nordmak. - Nederländ.", tipsData.Nordmakedonien_Nederländerna, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Ukraina - Österrike", tipsData.Ukraina_Österrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Ryssland - Danmark", tipsData.Ryssland_Danmark, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
             yCoord = DrawTheString("Finland - Belgien", tipsData.Finland_Belgien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);

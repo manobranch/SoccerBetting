@@ -22,7 +22,7 @@ namespace Fotbollstips.Logic
 
                 mail.From = new MailAddress("masterskapstips@gmail.com");
                 mail.To.Add(emailAddress);
-                mail.Subject = "Din VM-Tipsrad";
+                mail.Subject = "Din Tipsrad";
                 mail.IsBodyHtml = true;
                 mail.Body = GetEmailBody(blobUrl, name);
 
@@ -60,7 +60,7 @@ namespace Fotbollstips.Logic
             body += string.Format("<a href=\"{0}\">{1}</a>", blobUrl, blobUrl);
             body += "<br/>";
             body += "<p>Med vänlig hälsning</p><p>Tipsadministratören Martin Nordkvist</p>";
-            body += string.Format(@"https://vmtips.azurewebsites.net");
+            body += string.Format(@"https://emtips.azurewebsites.net");
 
             return body;
         }
