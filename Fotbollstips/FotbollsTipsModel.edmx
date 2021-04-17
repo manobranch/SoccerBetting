@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MartinDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TipsComments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="Comment" Type="nvarchar(max)" />
+          <Property Name="EntryDate" Type="datetime2" Precision="7" />
+        </EntityType>
+        <EntityType Name="TipsDatas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Namn" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="HasPayed" Type="bit" />
+          <Property Name="Poäng" Type="int" />
+          <Property Name="Finallag1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Finallag2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vinnare" Type="nvarchar" MaxLength="50" />
+          <Property Name="Frankrike-Sydkorea" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tyskland-Kina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Spanien-Sydafrika" Type="nvarchar" MaxLength="50" />
+          <Property Name="Norge-Nigeria" Type="nvarchar" MaxLength="50" />
+          <Property Name="Australien-Italien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brasilien-Jamaica" Type="nvarchar" MaxLength="50" />
+          <Property Name="England-Skottland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Argentina-Japan" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kanada-Kamerun" Type="nvarchar" MaxLength="50" />
+          <Property Name="NyaZeeland-Nederländerna" Type="nvarchar" MaxLength="50" />
+          <Property Name="Chile-Sverige" Type="nvarchar" MaxLength="50" />
+          <Property Name="Usa-Thailand" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nigeria-Sydkorea" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tyskland-Spanien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Frankrike-Norge" Type="nvarchar" MaxLength="50" />
+          <Property Name="Australien-Brasilien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sydafrika-Kina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Japan-Skottland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Jamaica-Italien" Type="nvarchar" MaxLength="50" />
+          <Property Name="England-Argentina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nederländerna-Kamerun" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kanada-NyaZeeland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sverige-Thailand" Type="nvarchar" MaxLength="50" />
+          <Property Name="Usa-Chile" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kina-Spanien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sydafrika-Tyskland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nigeria-Frankrike" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sydkorea-Norge" Type="nvarchar" MaxLength="50" />
+          <Property Name="Italien-Brasilien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Jamaica-Australien" Type="nvarchar" MaxLength="50" />
+          <Property Name="Japan-England" Type="nvarchar" MaxLength="50" />
+          <Property Name="Skottland-Argentina" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nederländerna-Kanada" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kamerun-NyaZeeland" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sverige-Usa" Type="nvarchar" MaxLength="50" />
+          <Property Name="Thailand-Chile" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntryDate" Type="datetime2" Precision="7" />
+        </EntityType>
+        <EntityType Name="TipsPathToPDFs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TipsData_SoftFK" Type="int" />
+          <Property Name="PathToPDF" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TipsRandomValues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Value" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="EntryDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="MartinDatabaseModelStoreContainer">
+          <EntitySet Name="TipsComments" EntityType="Self.TipsComments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipsDatas" EntityType="Self.TipsDatas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipsPathToPDFs" EntityType="Self.TipsPathToPDFs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipsRandomValues" EntityType="Self.TipsRandomValues" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MartinDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TipsComment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EntryDate" Type="DateTime" Precision="7" />
+        </EntityType>
+        <EntityType Name="TipsPathToPDF">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TipsData_SoftFK" Type="Int32" />
+          <Property Name="PathToPDF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="FotbollsTipsModel" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TipsComments" EntityType="Self.TipsComment" />
+          <EntitySet Name="TipsPathToPDFs" EntityType="Self.TipsPathToPDF" />
+          <EntitySet Name="TipsRandomValues" EntityType="MartinDatabaseModel.TipsRandomValue" />
+          <EntitySet Name="TipsDatas" EntityType="MartinDatabaseModel.TipsData" />
+        </EntityContainer>
+        <EntityType Name="TipsRandomValue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+        </EntityType>
+        <EntityType Name="TipsData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Namn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HasPayed" Type="Boolean" />
+          <Property Name="Poäng" Type="Int32" />
+          <Property Name="Finallag1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Finallag2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vinnare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Frankrike_Sydkorea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tyskland_Kina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Spanien_Sydafrika" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Norge_Nigeria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Australien_Italien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brasilien_Jamaica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="England_Skottland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Argentina_Japan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kanada_Kamerun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NyaZeeland_Nederländerna" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Chile_Sverige" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Usa_Thailand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nigeria_Sydkorea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tyskland_Spanien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Frankrike_Norge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Australien_Brasilien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sydafrika_Kina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Japan_Skottland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Jamaica_Italien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="England_Argentina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nederländerna_Kamerun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kanada_NyaZeeland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sverige_Thailand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Usa_Chile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kina_Spanien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sydafrika_Tyskland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nigeria_Frankrike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sydkorea_Norge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Italien_Brasilien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Jamaica_Australien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Japan_England" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Skottland_Argentina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nederländerna_Kanada" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kamerun_NyaZeeland" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sverige_Usa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Thailand_Chile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EntryDate" Type="DateTime" Precision="7" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MartinDatabaseModelStoreContainer" CdmEntityContainer="FotbollsTipsModel">
+          <EntitySetMapping Name="TipsComments">
+            <EntityTypeMapping TypeName="MartinDatabaseModel.TipsComment">
+              <MappingFragment StoreEntitySet="TipsComments">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipsPathToPDFs">
+            <EntityTypeMapping TypeName="MartinDatabaseModel.TipsPathToPDF">
+              <MappingFragment StoreEntitySet="TipsPathToPDFs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TipsData_SoftFK" ColumnName="TipsData_SoftFK" />
+                <ScalarProperty Name="PathToPDF" ColumnName="PathToPDF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipsRandomValues">
+            <EntityTypeMapping TypeName="MartinDatabaseModel.TipsRandomValue">
+              <MappingFragment StoreEntitySet="TipsRandomValues">
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipsDatas">
+            <EntityTypeMapping TypeName="MartinDatabaseModel.TipsData">
+              <MappingFragment StoreEntitySet="TipsDatas">
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Thailand_Chile" ColumnName="Thailand-Chile" />
+                <ScalarProperty Name="Sverige_Usa" ColumnName="Sverige-Usa" />
+                <ScalarProperty Name="Kamerun_NyaZeeland" ColumnName="Kamerun-NyaZeeland" />
+                <ScalarProperty Name="Nederländerna_Kanada" ColumnName="Nederländerna-Kanada" />
+                <ScalarProperty Name="Skottland_Argentina" ColumnName="Skottland-Argentina" />
+                <ScalarProperty Name="Japan_England" ColumnName="Japan-England" />
+                <ScalarProperty Name="Jamaica_Australien" ColumnName="Jamaica-Australien" />
+                <ScalarProperty Name="Italien_Brasilien" ColumnName="Italien-Brasilien" />
+                <ScalarProperty Name="Sydkorea_Norge" ColumnName="Sydkorea-Norge" />
+                <ScalarProperty Name="Nigeria_Frankrike" ColumnName="Nigeria-Frankrike" />
+                <ScalarProperty Name="Sydafrika_Tyskland" ColumnName="Sydafrika-Tyskland" />
+                <ScalarProperty Name="Kina_Spanien" ColumnName="Kina-Spanien" />
+                <ScalarProperty Name="Usa_Chile" ColumnName="Usa-Chile" />
+                <ScalarProperty Name="Sverige_Thailand" ColumnName="Sverige-Thailand" />
+                <ScalarProperty Name="Kanada_NyaZeeland" ColumnName="Kanada-NyaZeeland" />
+                <ScalarProperty Name="Nederländerna_Kamerun" ColumnName="Nederländerna-Kamerun" />
+                <ScalarProperty Name="England_Argentina" ColumnName="England-Argentina" />
+                <ScalarProperty Name="Jamaica_Italien" ColumnName="Jamaica-Italien" />
+                <ScalarProperty Name="Japan_Skottland" ColumnName="Japan-Skottland" />
+                <ScalarProperty Name="Sydafrika_Kina" ColumnName="Sydafrika-Kina" />
+                <ScalarProperty Name="Australien_Brasilien" ColumnName="Australien-Brasilien" />
+                <ScalarProperty Name="Frankrike_Norge" ColumnName="Frankrike-Norge" />
+                <ScalarProperty Name="Tyskland_Spanien" ColumnName="Tyskland-Spanien" />
+                <ScalarProperty Name="Nigeria_Sydkorea" ColumnName="Nigeria-Sydkorea" />
+                <ScalarProperty Name="Usa_Thailand" ColumnName="Usa-Thailand" />
+                <ScalarProperty Name="Chile_Sverige" ColumnName="Chile-Sverige" />
+                <ScalarProperty Name="NyaZeeland_Nederländerna" ColumnName="NyaZeeland-Nederländerna" />
+                <ScalarProperty Name="Kanada_Kamerun" ColumnName="Kanada-Kamerun" />
+                <ScalarProperty Name="Argentina_Japan" ColumnName="Argentina-Japan" />
+                <ScalarProperty Name="England_Skottland" ColumnName="England-Skottland" />
+                <ScalarProperty Name="Brasilien_Jamaica" ColumnName="Brasilien-Jamaica" />
+                <ScalarProperty Name="Australien_Italien" ColumnName="Australien-Italien" />
+                <ScalarProperty Name="Norge_Nigeria" ColumnName="Norge-Nigeria" />
+                <ScalarProperty Name="Spanien_Sydafrika" ColumnName="Spanien-Sydafrika" />
+                <ScalarProperty Name="Tyskland_Kina" ColumnName="Tyskland-Kina" />
+                <ScalarProperty Name="Frankrike_Sydkorea" ColumnName="Frankrike-Sydkorea" />
+                <ScalarProperty Name="Vinnare" ColumnName="Vinnare" />
+                <ScalarProperty Name="Finallag2" ColumnName="Finallag2" />
+                <ScalarProperty Name="Finallag1" ColumnName="Finallag1" />
+                <ScalarProperty Name="Poäng" ColumnName="Poäng" />
+                <ScalarProperty Name="HasPayed" ColumnName="HasPayed" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Namn" ColumnName="Namn" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

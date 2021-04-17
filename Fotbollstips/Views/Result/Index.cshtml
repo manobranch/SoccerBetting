@@ -1,0 +1,291 @@
+﻿@model Fotbollstips.TipsData
+
+@{
+    ViewBag.Title = "Resultat";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resultat : @ViewBag.Number</h2>
+
+<div>
+    @using (Html.BeginForm("Index", "Result", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <th>
+                    Namn
+                </th>
+                <th>
+                    Poäng
+                </th>
+                <th>
+                    Finallag 1
+                </th>
+                <th>
+                    Finallag 2
+                </th>
+                <th>
+                    Vinnare finalen
+                </th>
+
+                @* - - - - - IndexCshtml_SaveResultsTh.txt - Code area starts - - - - - - -*@
+                <th>
+                    Fra - Syd
+                </th>
+                <th>
+                    Tys - Kin
+                </th>
+                <th>
+                    Spa - Syd
+                </th>
+                <th>
+                    Nor - Nig
+                </th>
+                <th>
+                    Aus - Ita
+                </th>
+                <th>
+                    Bra - Jam
+                </th>
+                <th>
+                    Eng - Sko
+                </th>
+                <th>
+                    Arg - Jap
+                </th>
+                <th>
+                    Kan - Kam
+                </th>
+                <th>
+                    Nya - Ned
+                </th>
+                <th>
+                    Chi - Sve
+                </th>
+                <th>
+                    Usa - Tha
+                </th>
+                <th>
+                    Nig - Syd
+                </th>
+                <th>
+                    Tys - Spa
+                </th>
+                <th>
+                    Fra - Nor
+                </th>
+                <th>
+                    Aus - Bra
+                </th>
+                <th>
+                    Syd - Kin
+                </th>
+                <th>
+                    Jap - Sko
+                </th>
+                <th>
+                    Jam - Ita
+                </th>
+                <th>
+                    Eng - Arg
+                </th>
+                <th>
+                    Ned - Kam
+                </th>
+                <th>
+                    Kan - Nya
+                </th>
+                <th>
+                    Sve - Tha
+                </th>
+                <th>
+                    Usa - Chi
+                </th>
+                <th>
+                    Kin - Spa
+                </th>
+                <th>
+                    Syd - Tys
+                </th>
+                <th>
+                    Nig - Fra
+                </th>
+                <th>
+                    Syd - Nor
+                </th>
+                <th>
+                    Ita - Bra
+                </th>
+                <th>
+                    Jam - Aus
+                </th>
+                <th>
+                    Jap - Eng
+                </th>
+                <th>
+                    Sko - Arg
+                </th>
+                <th>
+                    Ned - Kan
+                </th>
+                <th>
+                    Kam - Nya
+                </th>
+                <th>
+                    Sve - Usa
+                </th>
+                <th>
+                    Tha - Chi
+                </th>
+
+
+
+                @* - - - - - Index.cshtml_SaveResultsTh.txt - Code area ends - - - - - - -*@
+
+            </tr>
+            <tr>
+                <td>
+                    @Model.Namn
+                </td>
+                <td>
+                    @Model.Poäng
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Finallag1)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Finallag2)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Vinnare)
+                </td>
+
+
+                @* - - - - - IndexCshtml_SaveResultsTextBoxFor.txt - Code area starts - - - - - - -*@
+                <th>
+                    @Html.TextBoxFor(m => m.Frankrike_Sydkorea)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Tyskland_Kina)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Spanien_Sydafrika)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Norge_Nigeria)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Australien_Italien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Brasilien_Jamaica)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.England_Skottland)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Argentina_Japan)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Kanada_Kamerun)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.NyaZeeland_Nederländerna)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Chile_Sverige)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Usa_Thailand)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Nigeria_Sydkorea)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Tyskland_Spanien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Frankrike_Norge)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Australien_Brasilien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Sydafrika_Kina)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Japan_Skottland)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Jamaica_Italien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.England_Argentina)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Nederländerna_Kamerun)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Kanada_NyaZeeland)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Sverige_Thailand)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Usa_Chile)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Kina_Spanien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Sydafrika_Tyskland)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Nigeria_Frankrike)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Sydkorea_Norge)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Italien_Brasilien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Jamaica_Australien)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Japan_England)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Skottland_Argentina)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Nederländerna_Kanada)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Kamerun_NyaZeeland)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Sverige_Usa)
+                </th>
+                <th>
+                    @Html.TextBoxFor(m => m.Thailand_Chile)
+                </th>
+
+
+
+
+                @* - - - - - Index.cshtml_SaveResultsTextBoxFor.txt - Code area ends - - - - - - -*@
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Spara" />
+                </td>
+            </tr>
+        </table>
+    }
+
+
+
+
+</div>

@@ -1,0 +1,66 @@
+﻿@*@model List<Fotbollstips.TipsData>*@
+@model Fotbollstips.Objects.PaymentObject
+
+@{
+    ViewBag.Title = "Betalningar";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <br />
+    @*<input id="testChar" name="testChar" type="text" />*@
+    @*<input type="text" name="date" value="@ViewBag.date" />*@
+    <br />
+
+    @using (Html.BeginForm("Index", "Payment", FormMethod.Post))
+    {
+        @Html.TextBoxFor(m => m.SendSms)
+        <br />
+        <br />
+        @Html.TextBoxFor(m => m.LatestDate)
+
+        if (Model.Tipsdata.Count() > 0)
+        {
+            <table>
+                <tr>
+                    <th>
+                        Namn
+                    </th>
+                    <th>
+                        Betalat
+                    </th>
+                    <th>
+                        EntryDate
+                    </th>
+                    <th>
+                        Id
+                    </th>
+                </tr>
+                @for (var i = 0; i < Model.Tipsdata.Count(); i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.Tipsdata[i].Namn)
+                        </td>
+                        <td>
+                            @*@Html.TextBoxFor(m => m[i].HasPayed)*@
+                            @Html.RadioButtonFor(m => m.Tipsdata[i].HasPayed, "False")
+                            @Html.RadioButtonFor(m => m.Tipsdata[i].HasPayed, "True")
+                        </td>
+                        <td>
+                            @Model.Tipsdata[i].EntryDate.ToString()
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Tipsdata[i].Id)
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <input type="submit" value="Spara" />
+                    </td>
+                </tr>
+            </table>
+        }
+    }
+</div>

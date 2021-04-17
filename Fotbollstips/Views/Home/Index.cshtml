@@ -1,0 +1,346 @@
+﻿@model List<Fotbollstips.TipsData>
+@{
+    ViewBag.Title = "Resultat";
+}
+
+<div class="jumbotron">
+    <h2>Resultat för VM-tipset 2019</h2>
+    <p>Totalt är 18 rader inlämnade vilket innebär 900 kr till vinnaren.</p>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>
+                Namn
+            </th>
+            <th>
+                Poäng
+            </th>
+            <th>
+                Finallag 1
+            </th>
+            <th>
+                Finallag 2
+            </th>
+            <th>
+                Vinnare finalen
+            </th>
+
+            @*- - - - - IndexCshtml_OnlyTh.txt - Code area starts - - - - - - - *@
+
+            <th>
+                Fra-Syd
+            </th>
+            <th>
+                Tys-Kin
+            </th>
+            <th>
+                Spa-Syd
+            </th>
+            <th>
+                Nor-Nig
+            </th>
+            <th>
+                Aus-Ita
+            </th>
+            <th>
+                Bra-Jam
+            </th>
+            <th>
+                Eng-Sko
+            </th>
+            <th>
+                Arg-Jap
+            </th>
+            <th>
+                Kan-Kam
+            </th>
+            <th>
+                Nya-Ned
+            </th>
+            <th>
+                Chi-Sve
+            </th>
+            <th>
+                Usa-Tha
+            </th>
+            <th>
+                Nig-Syd
+            </th>
+            <th>
+                Tys-Spa
+            </th>
+            <th>
+                Fra-Nor
+            </th>
+            <th>
+                Aus-Bra
+            </th>
+            <th>
+                Syd-Kin
+            </th>
+            <th>
+                Jap-Sko
+            </th>
+            <th>
+                Jam-Ita
+            </th>
+            <th>
+                Eng-Arg
+            </th>
+            <th>
+                Ned-Kam
+            </th>
+            <th>
+                Kan-Nya
+            </th>
+            <th>
+                Sve-Tha
+            </th>
+            <th>
+                Usa-Chi
+            </th>
+            <th>
+                Kin-Spa
+            </th>
+            <th>
+                Syd-Tys
+            </th>
+            <th>
+                Nig-Fra
+            </th>
+            <th>
+                Syd-Nor
+            </th>
+            <th>
+                Ita-Bra
+            </th>
+            <th>
+                Jam-Aus
+            </th>
+            <th>
+                Jap-Eng
+            </th>
+            <th>
+                Sko-Arg
+            </th>
+            <th>
+                Ned-Kan
+            </th>
+            <th>
+                Kam-Nya
+            </th>
+            <th>
+                Sve-Usa
+            </th>
+            <th>
+                Tha-Chi
+            </th>
+
+
+
+
+            @*- - - - - IndexCshtml_OnlyTh.txt - Code area ends - - - - - - -*@
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            List<string> correctTeams = new List<string>();
+
+            correctTeams.Add(Model[0].Finallag1);
+            correctTeams.Add(Model[0].Finallag2);
+
+            var final1 = (correctTeams.Any(item.Finallag1.Contains)) ? "color:#00D600" : "";
+            var final2 = (correctTeams.Any(item.Finallag2.Contains)) ? "color:#00D600" : "";
+
+            var vinnare = (item.Vinnare == Model[0].Vinnare) ? "color:#00D600" : "";
+
+            // - - - - - IndexCshtml_ForeachItemInModel.txt - Code area starts - - - - - - -
+            var frasyd = (item.Frankrike_Sydkorea == Model[0].Frankrike_Sydkorea) ? "color:#00D600" : "";
+            var tyskin = (item.Tyskland_Kina == Model[0].Tyskland_Kina) ? "color:#00D600" : "";
+            var spasyd = (item.Spanien_Sydafrika == Model[0].Spanien_Sydafrika) ? "color:#00D600" : "";
+            var nornig = (item.Norge_Nigeria == Model[0].Norge_Nigeria) ? "color:#00D600" : "";
+            var ausita = (item.Australien_Italien == Model[0].Australien_Italien) ? "color:#00D600" : "";
+            var brajam = (item.Brasilien_Jamaica == Model[0].Brasilien_Jamaica) ? "color:#00D600" : "";
+            var engsko = (item.England_Skottland == Model[0].England_Skottland) ? "color:#00D600" : "";
+            var argjap = (item.Argentina_Japan == Model[0].Argentina_Japan) ? "color:#00D600" : "";
+            var kankam = (item.Kanada_Kamerun == Model[0].Kanada_Kamerun) ? "color:#00D600" : "";
+            var nyaned = (item.NyaZeeland_Nederländerna == Model[0].NyaZeeland_Nederländerna) ? "color:#00D600" : "";
+            var chisve = (item.Chile_Sverige == Model[0].Chile_Sverige) ? "color:#00D600" : "";
+            var usatha = (item.Usa_Thailand == Model[0].Usa_Thailand) ? "color:#00D600" : "";
+            var nigsyd = (item.Nigeria_Sydkorea == Model[0].Nigeria_Sydkorea) ? "color:#00D600" : "";
+            var tysspa = (item.Tyskland_Spanien == Model[0].Tyskland_Spanien) ? "color:#00D600" : "";
+            var franor = (item.Frankrike_Norge == Model[0].Frankrike_Norge) ? "color:#00D600" : "";
+            var ausbra = (item.Australien_Brasilien == Model[0].Australien_Brasilien) ? "color:#00D600" : "";
+            var sydkin = (item.Sydafrika_Kina == Model[0].Sydafrika_Kina) ? "color:#00D600" : "";
+            var japsko = (item.Japan_Skottland == Model[0].Japan_Skottland) ? "color:#00D600" : "";
+            var jamita = (item.Jamaica_Italien == Model[0].Jamaica_Italien) ? "color:#00D600" : "";
+            var engarg = (item.England_Argentina == Model[0].England_Argentina) ? "color:#00D600" : "";
+            var nedkam = (item.Nederländerna_Kamerun == Model[0].Nederländerna_Kamerun) ? "color:#00D600" : "";
+            var kannya = (item.Kanada_NyaZeeland == Model[0].Kanada_NyaZeeland) ? "color:#00D600" : "";
+            var svetha = (item.Sverige_Thailand == Model[0].Sverige_Thailand) ? "color:#00D600" : "";
+            var usachi = (item.Usa_Chile == Model[0].Usa_Chile) ? "color:#00D600" : "";
+            var kinspa = (item.Kina_Spanien == Model[0].Kina_Spanien) ? "color:#00D600" : "";
+            var sydtys = (item.Sydafrika_Tyskland == Model[0].Sydafrika_Tyskland) ? "color:#00D600" : "";
+            var nigfra = (item.Nigeria_Frankrike == Model[0].Nigeria_Frankrike) ? "color:#00D600" : "";
+            var sydnor = (item.Sydkorea_Norge == Model[0].Sydkorea_Norge) ? "color:#00D600" : "";
+            var itabra = (item.Italien_Brasilien == Model[0].Italien_Brasilien) ? "color:#00D600" : "";
+            var jamaus = (item.Jamaica_Australien == Model[0].Jamaica_Australien) ? "color:#00D600" : "";
+            var japeng = (item.Japan_England == Model[0].Japan_England) ? "color:#00D600" : "";
+            var skoarg = (item.Skottland_Argentina == Model[0].Skottland_Argentina) ? "color:#00D600" : "";
+            var nedkan = (item.Nederländerna_Kanada == Model[0].Nederländerna_Kanada) ? "color:#00D600" : "";
+            var kamnya = (item.Kamerun_NyaZeeland == Model[0].Kamerun_NyaZeeland) ? "color:#00D600" : "";
+            var sveusa = (item.Sverige_Usa == Model[0].Sverige_Usa) ? "color:#00D600" : "";
+            var thachi = (item.Thailand_Chile == Model[0].Thailand_Chile) ? "color:#00D600" : "";
+
+
+
+            // - - - - - Index.cshtml_ForeachItemInModel.txt - Code area ends - - - - - - -
+
+        <tr>
+            <td>
+                @item.Namn
+            </td>
+            <td>
+                @item.Poäng
+            </td>
+            <td style="@final1">
+                @item.Finallag1
+            </td>
+            <td style="@final2">
+                @item.Finallag2
+            </td>
+            <td style="@vinnare">
+                @item.Vinnare
+            </td>
+
+            @* - - - - - IndexCshtml_TrTd.txt - Code area starts - - - - - - -*@
+            @******** Note: Add this a good places:
+        <td>
+            @item.Namn
+        </td>
+        <td>
+            @item.Poäng
+        </td>
+            *@
+            <td style="@frasyd">
+                @item.Frankrike_Sydkorea
+            </td>
+            <td style="@tyskin">
+                @item.Tyskland_Kina
+            </td>
+            <td style="@spasyd">
+                @item.Spanien_Sydafrika
+            </td>
+            <td style="@nornig">
+                @item.Norge_Nigeria
+            </td>
+            <td style="@ausita">
+                @item.Australien_Italien
+            </td>
+            <td style="@brajam">
+                @item.Brasilien_Jamaica
+            </td>
+            <td style="@engsko">
+                @item.England_Skottland
+            </td>
+            <td style="@argjap">
+                @item.Argentina_Japan
+            </td>
+            <td style="@kankam">
+                @item.Kanada_Kamerun
+            </td>
+            <td style="@nyaned">
+                @item.NyaZeeland_Nederländerna
+            </td>
+            <td style="@chisve">
+                @item.Chile_Sverige
+            </td>
+            <td style="@usatha">
+                @item.Usa_Thailand
+            </td>
+            <td style="@nigsyd">
+                @item.Nigeria_Sydkorea
+            </td>
+            <td style="@tysspa">
+                @item.Tyskland_Spanien
+            </td>
+            <td style="@franor">
+                @item.Frankrike_Norge
+            </td>
+            <td style="@ausbra">
+                @item.Australien_Brasilien
+            </td>
+            <td style="@sydkin">
+                @item.Sydafrika_Kina
+            </td>
+            <td style="@japsko">
+                @item.Japan_Skottland
+            </td>
+            <td style="@jamita">
+                @item.Jamaica_Italien
+            </td>
+            <td style="@engarg">
+                @item.England_Argentina
+            </td>
+            <td style="@nedkam">
+                @item.Nederländerna_Kamerun
+            </td>
+            <td style="@kannya">
+                @item.Kanada_NyaZeeland
+            </td>
+            <td style="@svetha">
+                @item.Sverige_Thailand
+            </td>
+            <td style="@usachi">
+                @item.Usa_Chile
+            </td>
+            <td style="@kinspa">
+                @item.Kina_Spanien
+            </td>
+            <td style="@sydtys">
+                @item.Sydafrika_Tyskland
+            </td>
+            <td style="@nigfra">
+                @item.Nigeria_Frankrike
+            </td>
+            <td style="@sydnor">
+                @item.Sydkorea_Norge
+            </td>
+            <td style="@itabra">
+                @item.Italien_Brasilien
+            </td>
+            <td style="@jamaus">
+                @item.Jamaica_Australien
+            </td>
+            <td style="@japeng">
+                @item.Japan_England
+            </td>
+            <td style="@skoarg">
+                @item.Skottland_Argentina
+            </td>
+            <td style="@nedkan">
+                @item.Nederländerna_Kanada
+            </td>
+            <td style="@kamnya">
+                @item.Kamerun_NyaZeeland
+            </td>
+            <td style="@sveusa">
+                @item.Sverige_Usa
+            </td>
+            <td style="@thachi">
+                @item.Thailand_Chile
+            </td>
+
+
+
+
+            @* - - - - - Index.cshtml_TrTd.txt - Code area ends - - - - - - -*@
+
+        </tr>
+        }
+    </table>
+</div>
+
+
