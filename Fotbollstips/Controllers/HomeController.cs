@@ -38,7 +38,7 @@ namespace Fotbollstips.Controllers
         //public ActionResult Contact()
         //{
         //    ViewBag.Message = "Your contact page.";
-
+        //    Comment in develop branch
         //    return View();
         //}
 
