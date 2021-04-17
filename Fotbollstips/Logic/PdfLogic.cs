@@ -55,49 +55,50 @@ namespace Fotbollstips.Logic
             //xCoordGame = 340;
             //xCoordResult = 510;
 
-            yCoord = DrawTheString("Frankrike - Sydkorea", tipsData.Frankrike_Sydkorea, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Tyskland - Kina", tipsData.Tyskland_Kina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Spanien - Sydafrika", tipsData.Spanien_Sydafrika, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Norge - Nigeria", tipsData.Norge_Nigeria, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Australien - Italien", tipsData.Australien_Italien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Brasilien - Jamaica", tipsData.Brasilien_Jamaica, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("England - Skottland", tipsData.England_Skottland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Argentina - Japan", tipsData.Argentina_Japan, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Kanada - Kamerun", tipsData.Kanada_Kamerun, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Nya Zeeland - Nederländ.", tipsData.NyaZeeland_Nederländerna, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Chile - Sverige", tipsData.Chile_Sverige, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Usa - Thailand", tipsData.Usa_Thailand, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Nigeria - Sydkorea", tipsData.Nigeria_Sydkorea, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Tyskland - Spanien", tipsData.Tyskland_Spanien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            
-            yCoord = DrawTheString("Frankrike - Norge", tipsData.Frankrike_Norge, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Australien - Brasilien", tipsData.Australien_Brasilien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Sydafrika - Kina", tipsData.Sydafrika_Kina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Japan - Skottland", tipsData.Japan_Skottland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Jamaica - Italien", tipsData.Jamaica_Italien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("England - Argentina", tipsData.England_Argentina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
 
+            yCoord = DrawTheString("Turkiet - Italien", tipsData.Turkiet_Italien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Wales - Schweiz", tipsData.Wales_Schweiz, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Danmark - Finland", tipsData.Danmark_Finland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Belgien - Ryssland", tipsData.Belgien_Ryssland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("England - Kroatien", tipsData.England_Kroatien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Österrike - Nordmakedonien", tipsData.Österrike_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Nederländerna - Ukraina", tipsData.Nederländerna_Ukraina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Skottland - Tjeckien", tipsData.Skottland_Tjeckien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Polen - Slovakien", tipsData.Polen_Slovakien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Spanien - Sverige", tipsData.Spanien_Sverige, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ungern - Portugal", tipsData.Ungern_Portugal, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Frankrike - Tyskland", tipsData.Frankrike_Tyskland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Finland - Ryssland", tipsData.Finland_Ryssland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Turkiet - Wales", tipsData.Turkiet_Wales, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Italien - Schweiz", tipsData.Italien_Schweiz, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ukraina - Nordmakedonien", tipsData.Ukraina_Nordmakedonien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Danmark - Belgien", tipsData.Danmark_Belgien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Nederländerna - Österrike", tipsData.Nederländerna_Österrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Sverige - Slovakien", tipsData.Sverige_Slovakien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Kroatien - Tjeckien", tipsData.Kroatien_Tjeckien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+                        
             // Right column
             yCoord = 135;
             xCoordGame = 340;
             xCoordResult = 510;
 
-            yCoord = DrawTheString("Nederländerna - Kamerun", tipsData.Nederländerna_Kamerun, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Kanada - Nya Zeeland", tipsData.Kanada_NyaZeeland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Sverige - Thailand", tipsData.Sverige_Thailand, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Usa - Chile", tipsData.Usa_Chile, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Kina - Spanien", tipsData.Kina_Spanien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Sydafrika - Tyskland", tipsData.Sydafrika_Tyskland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Nigeria - Frankrike", tipsData.Nigeria_Frankrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Sydkorea - Norge", tipsData.Sydkorea_Norge, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Italien - Brasilien", tipsData.Italien_Brasilien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Jamaica - Australien", tipsData.Jamaica_Australien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Japan - England", tipsData.Japan_England, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Skottland - Argentina", tipsData.Skottland_Argentina, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Nederländerna - Kanada", tipsData.Nederländerna_Kanada, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Kamerun - Nya Zeeland", tipsData.Kamerun_NyaZeeland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Sverige - Usa", tipsData.Sverige_Usa, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
-            yCoord = DrawTheString("Thailand - Chile", tipsData.Thailand_Chile, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("England - Skottland", tipsData.England_Skottland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ungern - Frankrike", tipsData.Ungern_Frankrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Portugal - Tyskland", tipsData.Portugal_Tyskland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Spanien - Polen", tipsData.Spanien_Polen, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Italien - Wales", tipsData.Italien_Wales, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Schweiz - Turkiet", tipsData.Schweiz_Turkiet, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Nordmakedonien - Nederländerna", tipsData.Nordmakedonien_Nederländerna, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ukraina - Österrike", tipsData.Ukraina_Österrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Ryssland - Danmark", tipsData.Ryssland_Danmark, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Finland - Belgien", tipsData.Finland_Belgien, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Tjeckien - England", tipsData.Tjeckien_England, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Kroatien - Skottland", tipsData.Kroatien_Skottland, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Slovakien - Spaninen", tipsData.Slovakien_Spaninen, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Sverige - Polen", tipsData.Sverige_Polen, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Tyskland - Ungern", tipsData.Tyskland_Ungern, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+            yCoord = DrawTheString("Portugal - Frankrike", tipsData.Portugal_Frankrike, yCoord, xCoordGame, xCoordResult, graph, fontMedium);
+
 
             // - - - - - PdfLogic_SaveTipsDatas.txt - Code area ends - - - - - - - 
 

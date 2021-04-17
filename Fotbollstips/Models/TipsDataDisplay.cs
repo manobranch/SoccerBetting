@@ -15,43 +15,42 @@ namespace Fotbollstips.Models
         public string Vinnare { get; set; }
 
         // - - - - - TipsDataDisplay_Properities.txt - Code area starts - - - - - - - 
-
-        public string Frankrike_Sydkorea { get; set; }
-        public string Tyskland_Kina { get; set; }
-        public string Spanien_Sydafrika { get; set; }
-        public string Norge_Nigeria { get; set; }
-        public string Australien_Italien { get; set; }
-        public string Brasilien_Jamaica { get; set; }
+        public string Turkiet_Italien { get; set; }
+        public string Wales_Schweiz { get; set; }
+        public string Danmark_Finland { get; set; }
+        public string Belgien_Ryssland { get; set; }
+        public string England_Kroatien { get; set; }
+        public string Österrike_Nordmakedonien { get; set; }
+        public string Nederländerna_Ukraina { get; set; }
+        public string Skottland_Tjeckien { get; set; }
+        public string Polen_Slovakien { get; set; }
+        public string Spanien_Sverige { get; set; }
+        public string Ungern_Portugal { get; set; }
+        public string Frankrike_Tyskland { get; set; }
+        public string Finland_Ryssland { get; set; }
+        public string Turkiet_Wales { get; set; }
+        public string Italien_Schweiz { get; set; }
+        public string Ukraina_Nordmakedonien { get; set; }
+        public string Danmark_Belgien { get; set; }
+        public string Nederländerna_Österrike { get; set; }
+        public string Sverige_Slovakien { get; set; }
+        public string Kroatien_Tjeckien { get; set; }
         public string England_Skottland { get; set; }
-        public string Argentina_Japan { get; set; }
-        public string Kanada_Kamerun { get; set; }
-        public string NyaZeeland_Nederländerna { get; set; }
-        public string Chile_Sverige { get; set; }
-        public string Usa_Thailand { get; set; }
-        public string Nigeria_Sydkorea { get; set; }
-        public string Tyskland_Spanien { get; set; }
-        public string Frankrike_Norge { get; set; }
-        public string Australien_Brasilien { get; set; }
-        public string Sydafrika_Kina { get; set; }
-        public string Japan_Skottland { get; set; }
-        public string Jamaica_Italien { get; set; }
-        public string England_Argentina { get; set; }
-        public string Nederländerna_Kamerun { get; set; }
-        public string Kanada_NyaZeeland { get; set; }
-        public string Sverige_Thailand { get; set; }
-        public string Usa_Chile { get; set; }
-        public string Kina_Spanien { get; set; }
-        public string Sydafrika_Tyskland { get; set; }
-        public string Nigeria_Frankrike { get; set; }
-        public string Sydkorea_Norge { get; set; }
-        public string Italien_Brasilien { get; set; }
-        public string Jamaica_Australien { get; set; }
-        public string Japan_England { get; set; }
-        public string Skottland_Argentina { get; set; }
-        public string Nederländerna_Kanada { get; set; }
-        public string Kamerun_NyaZeeland { get; set; }
-        public string Sverige_Usa { get; set; }
-        public string Thailand_Chile { get; set; }
+        public string Ungern_Frankrike { get; set; }
+        public string Portugal_Tyskland { get; set; }
+        public string Spanien_Polen { get; set; }
+        public string Italien_Wales { get; set; }
+        public string Schweiz_Turkiet { get; set; }
+        public string Nordmakedonien_Nederländerna { get; set; }
+        public string Ukraina_Österrike { get; set; }
+        public string Ryssland_Danmark { get; set; }
+        public string Finland_Belgien { get; set; }
+        public string Tjeckien_England { get; set; }
+        public string Kroatien_Skottland { get; set; }
+        public string Slovakien_Spaninen { get; set; }
+        public string Sverige_Polen { get; set; }
+        public string Tyskland_Ungern { get; set; }
+        public string Portugal_Frankrike { get; set; }
 
 
 
@@ -66,42 +65,42 @@ namespace Fotbollstips.Models
             Vinnare = td.Vinnare;
 
             // - - - - - TipsDataDisplay_Constructor.txt - Code area starts - - - - - - - 
-            Frankrike_Sydkorea = td.Frankrike_Sydkorea;
-            Tyskland_Kina = td.Tyskland_Kina;
-            Spanien_Sydafrika = td.Spanien_Sydafrika;
-            Norge_Nigeria = td.Norge_Nigeria;
-            Australien_Italien = td.Australien_Italien;
-            Brasilien_Jamaica = td.Brasilien_Jamaica;
+            Turkiet_Italien = td.Turkiet_Italien;
+            Wales_Schweiz = td.Wales_Schweiz;
+            Danmark_Finland = td.Danmark_Finland;
+            Belgien_Ryssland = td.Belgien_Ryssland;
+            England_Kroatien = td.England_Kroatien;
+            Österrike_Nordmakedonien = td.Österrike_Nordmakedonien;
+            Nederländerna_Ukraina = td.Nederländerna_Ukraina;
+            Skottland_Tjeckien = td.Skottland_Tjeckien;
+            Polen_Slovakien = td.Polen_Slovakien;
+            Spanien_Sverige = td.Spanien_Sverige;
+            Ungern_Portugal = td.Ungern_Portugal;
+            Frankrike_Tyskland = td.Frankrike_Tyskland;
+            Finland_Ryssland = td.Finland_Ryssland;
+            Turkiet_Wales = td.Turkiet_Wales;
+            Italien_Schweiz = td.Italien_Schweiz;
+            Ukraina_Nordmakedonien = td.Ukraina_Nordmakedonien;
+            Danmark_Belgien = td.Danmark_Belgien;
+            Nederländerna_Österrike = td.Nederländerna_Österrike;
+            Sverige_Slovakien = td.Sverige_Slovakien;
+            Kroatien_Tjeckien = td.Kroatien_Tjeckien;
             England_Skottland = td.England_Skottland;
-            Argentina_Japan = td.Argentina_Japan;
-            Kanada_Kamerun = td.Kanada_Kamerun;
-            NyaZeeland_Nederländerna = td.NyaZeeland_Nederländerna;
-            Chile_Sverige = td.Chile_Sverige;
-            Usa_Thailand = td.Usa_Thailand;
-            Nigeria_Sydkorea = td.Nigeria_Sydkorea;
-            Tyskland_Spanien = td.Tyskland_Spanien;
-            Frankrike_Norge = td.Frankrike_Norge;
-            Australien_Brasilien = td.Australien_Brasilien;
-            Sydafrika_Kina = td.Sydafrika_Kina;
-            Japan_Skottland = td.Japan_Skottland;
-            Jamaica_Italien = td.Jamaica_Italien;
-            England_Argentina = td.England_Argentina;
-            Nederländerna_Kamerun = td.Nederländerna_Kamerun;
-            Kanada_NyaZeeland = td.Kanada_NyaZeeland;
-            Sverige_Thailand = td.Sverige_Thailand;
-            Usa_Chile = td.Usa_Chile;
-            Kina_Spanien = td.Kina_Spanien;
-            Sydafrika_Tyskland = td.Sydafrika_Tyskland;
-            Nigeria_Frankrike = td.Nigeria_Frankrike;
-            Sydkorea_Norge = td.Sydkorea_Norge;
-            Italien_Brasilien = td.Italien_Brasilien;
-            Jamaica_Australien = td.Jamaica_Australien;
-            Japan_England = td.Japan_England;
-            Skottland_Argentina = td.Skottland_Argentina;
-            Nederländerna_Kanada = td.Nederländerna_Kanada;
-            Kamerun_NyaZeeland = td.Kamerun_NyaZeeland;
-            Sverige_Usa = td.Sverige_Usa;
-            Thailand_Chile = td.Thailand_Chile;
+            Ungern_Frankrike = td.Ungern_Frankrike;
+            Portugal_Tyskland = td.Portugal_Tyskland;
+            Spanien_Polen = td.Spanien_Polen;
+            Italien_Wales = td.Italien_Wales;
+            Schweiz_Turkiet = td.Schweiz_Turkiet;
+            Nordmakedonien_Nederländerna = td.Nordmakedonien_Nederländerna;
+            Ukraina_Österrike = td.Ukraina_Österrike;
+            Ryssland_Danmark = td.Ryssland_Danmark;
+            Finland_Belgien = td.Finland_Belgien;
+            Tjeckien_England = td.Tjeckien_England;
+            Kroatien_Skottland = td.Kroatien_Skottland;
+            Slovakien_Spaninen = td.Slovakien_Spaninen;
+            Sverige_Polen = td.Sverige_Polen;
+            Tyskland_Ungern = td.Tyskland_Ungern;
+            Portugal_Frankrike = td.Portugal_Frankrike;
 
 
 

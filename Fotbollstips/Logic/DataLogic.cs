@@ -130,114 +130,114 @@ namespace Fotbollstips.Logic
 
 
                 // - - - - - DataLogic_CalculatePoints.txt - Code area starts - - - - - - - 
-
-                if (item.Frankrike_Sydkorea == correct.Frankrike_Sydkorea)
+                if (item.Turkiet_Italien == correct.Turkiet_Italien)
                     points++;
 
-                if (item.Tyskland_Kina == correct.Tyskland_Kina)
+                if (item.Wales_Schweiz == correct.Wales_Schweiz)
                     points++;
 
-                if (item.Spanien_Sydafrika == correct.Spanien_Sydafrika)
+                if (item.Danmark_Finland == correct.Danmark_Finland)
                     points++;
 
-                if (item.Norge_Nigeria == correct.Norge_Nigeria)
+                if (item.Belgien_Ryssland == correct.Belgien_Ryssland)
                     points++;
 
-                if (item.Australien_Italien == correct.Australien_Italien)
+                if (item.England_Kroatien == correct.England_Kroatien)
                     points++;
 
-                if (item.Brasilien_Jamaica == correct.Brasilien_Jamaica)
+                if (item.Österrike_Nordmakedonien == correct.Österrike_Nordmakedonien)
+                    points++;
+
+                if (item.Nederländerna_Ukraina == correct.Nederländerna_Ukraina)
+                    points++;
+
+                if (item.Skottland_Tjeckien == correct.Skottland_Tjeckien)
+                    points++;
+
+                if (item.Polen_Slovakien == correct.Polen_Slovakien)
+                    points++;
+
+                if (item.Spanien_Sverige == correct.Spanien_Sverige)
+                    points++;
+
+                if (item.Ungern_Portugal == correct.Ungern_Portugal)
+                    points++;
+
+                if (item.Frankrike_Tyskland == correct.Frankrike_Tyskland)
+                    points++;
+
+                if (item.Finland_Ryssland == correct.Finland_Ryssland)
+                    points++;
+
+                if (item.Turkiet_Wales == correct.Turkiet_Wales)
+                    points++;
+
+                if (item.Italien_Schweiz == correct.Italien_Schweiz)
+                    points++;
+
+                if (item.Ukraina_Nordmakedonien == correct.Ukraina_Nordmakedonien)
+                    points++;
+
+                if (item.Danmark_Belgien == correct.Danmark_Belgien)
+                    points++;
+
+                if (item.Nederländerna_Österrike == correct.Nederländerna_Österrike)
+                    points++;
+
+                if (item.Sverige_Slovakien == correct.Sverige_Slovakien)
+                    points++;
+
+                if (item.Kroatien_Tjeckien == correct.Kroatien_Tjeckien)
                     points++;
 
                 if (item.England_Skottland == correct.England_Skottland)
                     points++;
 
-                if (item.Argentina_Japan == correct.Argentina_Japan)
+                if (item.Ungern_Frankrike == correct.Ungern_Frankrike)
                     points++;
 
-                if (item.Kanada_Kamerun == correct.Kanada_Kamerun)
+                if (item.Portugal_Tyskland == correct.Portugal_Tyskland)
                     points++;
 
-                if (item.NyaZeeland_Nederländerna == correct.NyaZeeland_Nederländerna)
+                if (item.Spanien_Polen == correct.Spanien_Polen)
                     points++;
 
-                if (item.Chile_Sverige == correct.Chile_Sverige)
+                if (item.Italien_Wales == correct.Italien_Wales)
                     points++;
 
-                if (item.Usa_Thailand == correct.Usa_Thailand)
+                if (item.Schweiz_Turkiet == correct.Schweiz_Turkiet)
                     points++;
 
-                if (item.Nigeria_Sydkorea == correct.Nigeria_Sydkorea)
+                if (item.Nordmakedonien_Nederländerna == correct.Nordmakedonien_Nederländerna)
                     points++;
 
-                if (item.Tyskland_Spanien == correct.Tyskland_Spanien)
+                if (item.Ukraina_Österrike == correct.Ukraina_Österrike)
                     points++;
 
-                if (item.Frankrike_Norge == correct.Frankrike_Norge)
+                if (item.Ryssland_Danmark == correct.Ryssland_Danmark)
                     points++;
 
-                if (item.Australien_Brasilien == correct.Australien_Brasilien)
+                if (item.Finland_Belgien == correct.Finland_Belgien)
                     points++;
 
-                if (item.Sydafrika_Kina == correct.Sydafrika_Kina)
+                if (item.Tjeckien_England == correct.Tjeckien_England)
                     points++;
 
-                if (item.Japan_Skottland == correct.Japan_Skottland)
+                if (item.Kroatien_Skottland == correct.Kroatien_Skottland)
                     points++;
 
-                if (item.Jamaica_Italien == correct.Jamaica_Italien)
+                if (item.Slovakien_Spaninen == correct.Slovakien_Spaninen)
                     points++;
 
-                if (item.England_Argentina == correct.England_Argentina)
+                if (item.Sverige_Polen == correct.Sverige_Polen)
                     points++;
 
-                if (item.Nederländerna_Kamerun == correct.Nederländerna_Kamerun)
+                if (item.Tyskland_Ungern == correct.Tyskland_Ungern)
                     points++;
 
-                if (item.Kanada_NyaZeeland == correct.Kanada_NyaZeeland)
+                if (item.Portugal_Frankrike == correct.Portugal_Frankrike)
                     points++;
 
-                if (item.Sverige_Thailand == correct.Sverige_Thailand)
-                    points++;
-
-                if (item.Usa_Chile == correct.Usa_Chile)
-                    points++;
-
-                if (item.Kina_Spanien == correct.Kina_Spanien)
-                    points++;
-
-                if (item.Sydafrika_Tyskland == correct.Sydafrika_Tyskland)
-                    points++;
-
-                if (item.Nigeria_Frankrike == correct.Nigeria_Frankrike)
-                    points++;
-
-                if (item.Sydkorea_Norge == correct.Sydkorea_Norge)
-                    points++;
-
-                if (item.Italien_Brasilien == correct.Italien_Brasilien)
-                    points++;
-
-                if (item.Jamaica_Australien == correct.Jamaica_Australien)
-                    points++;
-
-                if (item.Japan_England == correct.Japan_England)
-                    points++;
-
-                if (item.Skottland_Argentina == correct.Skottland_Argentina)
-                    points++;
-
-                if (item.Nederländerna_Kanada == correct.Nederländerna_Kanada)
-                    points++;
-
-                if (item.Kamerun_NyaZeeland == correct.Kamerun_NyaZeeland)
-                    points++;
-
-                if (item.Sverige_Usa == correct.Sverige_Usa)
-                    points++;
-
-                if (item.Thailand_Chile == correct.Thailand_Chile)
-                    points++;
 
 
 
@@ -286,43 +286,43 @@ namespace Fotbollstips.Logic
             foreach (var item in data)
             {
                 // - - - - - DataLogic_ManipulateTextStrings.txt - Code area starts - - - - - - - 
-
-                item.Frankrike_Sydkorea = item.Frankrike_Sydkorea.Insert(1, "-");
-                item.Tyskland_Kina = item.Tyskland_Kina.Insert(1, "-");
-                item.Spanien_Sydafrika = item.Spanien_Sydafrika.Insert(1, "-");
-                item.Norge_Nigeria = item.Norge_Nigeria.Insert(1, "-");
-                item.Australien_Italien = item.Australien_Italien.Insert(1, "-");
-                item.Brasilien_Jamaica = item.Brasilien_Jamaica.Insert(1, "-");
+                item.Turkiet_Italien = item.Turkiet_Italien.Insert(1, "-");
+                item.Wales_Schweiz = item.Wales_Schweiz.Insert(1, "-");
+                item.Danmark_Finland = item.Danmark_Finland.Insert(1, "-");
+                item.Belgien_Ryssland = item.Belgien_Ryssland.Insert(1, "-");
+                item.England_Kroatien = item.England_Kroatien.Insert(1, "-");
+                item.Österrike_Nordmakedonien = item.Österrike_Nordmakedonien.Insert(1, "-");
+                item.Nederländerna_Ukraina = item.Nederländerna_Ukraina.Insert(1, "-");
+                item.Skottland_Tjeckien = item.Skottland_Tjeckien.Insert(1, "-");
+                item.Polen_Slovakien = item.Polen_Slovakien.Insert(1, "-");
+                item.Spanien_Sverige = item.Spanien_Sverige.Insert(1, "-");
+                item.Ungern_Portugal = item.Ungern_Portugal.Insert(1, "-");
+                item.Frankrike_Tyskland = item.Frankrike_Tyskland.Insert(1, "-");
+                item.Finland_Ryssland = item.Finland_Ryssland.Insert(1, "-");
+                item.Turkiet_Wales = item.Turkiet_Wales.Insert(1, "-");
+                item.Italien_Schweiz = item.Italien_Schweiz.Insert(1, "-");
+                item.Ukraina_Nordmakedonien = item.Ukraina_Nordmakedonien.Insert(1, "-");
+                item.Danmark_Belgien = item.Danmark_Belgien.Insert(1, "-");
+                item.Nederländerna_Österrike = item.Nederländerna_Österrike.Insert(1, "-");
+                item.Sverige_Slovakien = item.Sverige_Slovakien.Insert(1, "-");
+                item.Kroatien_Tjeckien = item.Kroatien_Tjeckien.Insert(1, "-");
                 item.England_Skottland = item.England_Skottland.Insert(1, "-");
-                item.Argentina_Japan = item.Argentina_Japan.Insert(1, "-");
-                item.Kanada_Kamerun = item.Kanada_Kamerun.Insert(1, "-");
-                item.NyaZeeland_Nederländerna = item.NyaZeeland_Nederländerna.Insert(1, "-");
-                item.Chile_Sverige = item.Chile_Sverige.Insert(1, "-");
-                item.Usa_Thailand = item.Usa_Thailand.Insert(1, "-");
-                item.Nigeria_Sydkorea = item.Nigeria_Sydkorea.Insert(1, "-");
-                item.Tyskland_Spanien = item.Tyskland_Spanien.Insert(1, "-");
-                item.Frankrike_Norge = item.Frankrike_Norge.Insert(1, "-");
-                item.Australien_Brasilien = item.Australien_Brasilien.Insert(1, "-");
-                item.Sydafrika_Kina = item.Sydafrika_Kina.Insert(1, "-");
-                item.Japan_Skottland = item.Japan_Skottland.Insert(1, "-");
-                item.Jamaica_Italien = item.Jamaica_Italien.Insert(1, "-");
-                item.England_Argentina = item.England_Argentina.Insert(1, "-");
-                item.Nederländerna_Kamerun = item.Nederländerna_Kamerun.Insert(1, "-");
-                item.Kanada_NyaZeeland = item.Kanada_NyaZeeland.Insert(1, "-");
-                item.Sverige_Thailand = item.Sverige_Thailand.Insert(1, "-");
-                item.Usa_Chile = item.Usa_Chile.Insert(1, "-");
-                item.Kina_Spanien = item.Kina_Spanien.Insert(1, "-");
-                item.Sydafrika_Tyskland = item.Sydafrika_Tyskland.Insert(1, "-");
-                item.Nigeria_Frankrike = item.Nigeria_Frankrike.Insert(1, "-");
-                item.Sydkorea_Norge = item.Sydkorea_Norge.Insert(1, "-");
-                item.Italien_Brasilien = item.Italien_Brasilien.Insert(1, "-");
-                item.Jamaica_Australien = item.Jamaica_Australien.Insert(1, "-");
-                item.Japan_England = item.Japan_England.Insert(1, "-");
-                item.Skottland_Argentina = item.Skottland_Argentina.Insert(1, "-");
-                item.Nederländerna_Kanada = item.Nederländerna_Kanada.Insert(1, "-");
-                item.Kamerun_NyaZeeland = item.Kamerun_NyaZeeland.Insert(1, "-");
-                item.Sverige_Usa = item.Sverige_Usa.Insert(1, "-");
-                item.Thailand_Chile = item.Thailand_Chile.Insert(1, "-");
+                item.Ungern_Frankrike = item.Ungern_Frankrike.Insert(1, "-");
+                item.Portugal_Tyskland = item.Portugal_Tyskland.Insert(1, "-");
+                item.Spanien_Polen = item.Spanien_Polen.Insert(1, "-");
+                item.Italien_Wales = item.Italien_Wales.Insert(1, "-");
+                item.Schweiz_Turkiet = item.Schweiz_Turkiet.Insert(1, "-");
+                item.Nordmakedonien_Nederländerna = item.Nordmakedonien_Nederländerna.Insert(1, "-");
+                item.Ukraina_Österrike = item.Ukraina_Österrike.Insert(1, "-");
+                item.Ryssland_Danmark = item.Ryssland_Danmark.Insert(1, "-");
+                item.Finland_Belgien = item.Finland_Belgien.Insert(1, "-");
+                item.Tjeckien_England = item.Tjeckien_England.Insert(1, "-");
+                item.Kroatien_Skottland = item.Kroatien_Skottland.Insert(1, "-");
+                item.Slovakien_Spaninen = item.Slovakien_Spaninen.Insert(1, "-");
+                item.Sverige_Polen = item.Sverige_Polen.Insert(1, "-");
+                item.Tyskland_Ungern = item.Tyskland_Ungern.Insert(1, "-");
+                item.Portugal_Frankrike = item.Portugal_Frankrike.Insert(1, "-");
+
 
                 // - - - - - DataLogic_ManipulateTextStrings.txt - Code area ends - - - - - - - 
             }
@@ -343,43 +343,42 @@ namespace Fotbollstips.Logic
                 result.Vinnare = model.Vinnare;
 
                 // - - - - - DataLogic_SaveCorrectAnswers.txt - Code area starts - - - - - - - 
-                result.Frankrike_Sydkorea = model.Frankrike_Sydkorea;
-                result.Tyskland_Kina = model.Tyskland_Kina;
-                result.Spanien_Sydafrika = model.Spanien_Sydafrika;
-                result.Norge_Nigeria = model.Norge_Nigeria;
-                result.Australien_Italien = model.Australien_Italien;
-                result.Brasilien_Jamaica = model.Brasilien_Jamaica;
+                result.Turkiet_Italien = model.Turkiet_Italien;
+                result.Wales_Schweiz = model.Wales_Schweiz;
+                result.Danmark_Finland = model.Danmark_Finland;
+                result.Belgien_Ryssland = model.Belgien_Ryssland;
+                result.England_Kroatien = model.England_Kroatien;
+                result.Österrike_Nordmakedonien = model.Österrike_Nordmakedonien;
+                result.Nederländerna_Ukraina = model.Nederländerna_Ukraina;
+                result.Skottland_Tjeckien = model.Skottland_Tjeckien;
+                result.Polen_Slovakien = model.Polen_Slovakien;
+                result.Spanien_Sverige = model.Spanien_Sverige;
+                result.Ungern_Portugal = model.Ungern_Portugal;
+                result.Frankrike_Tyskland = model.Frankrike_Tyskland;
+                result.Finland_Ryssland = model.Finland_Ryssland;
+                result.Turkiet_Wales = model.Turkiet_Wales;
+                result.Italien_Schweiz = model.Italien_Schweiz;
+                result.Ukraina_Nordmakedonien = model.Ukraina_Nordmakedonien;
+                result.Danmark_Belgien = model.Danmark_Belgien;
+                result.Nederländerna_Österrike = model.Nederländerna_Österrike;
+                result.Sverige_Slovakien = model.Sverige_Slovakien;
+                result.Kroatien_Tjeckien = model.Kroatien_Tjeckien;
                 result.England_Skottland = model.England_Skottland;
-                result.Argentina_Japan = model.Argentina_Japan;
-                result.Kanada_Kamerun = model.Kanada_Kamerun;
-                result.NyaZeeland_Nederländerna = model.NyaZeeland_Nederländerna;
-                result.Chile_Sverige = model.Chile_Sverige;
-                result.Usa_Thailand = model.Usa_Thailand;
-                result.Nigeria_Sydkorea = model.Nigeria_Sydkorea;
-                result.Tyskland_Spanien = model.Tyskland_Spanien;
-                result.Frankrike_Norge = model.Frankrike_Norge;
-                result.Australien_Brasilien = model.Australien_Brasilien;
-                result.Sydafrika_Kina = model.Sydafrika_Kina;
-                result.Japan_Skottland = model.Japan_Skottland;
-                result.Jamaica_Italien = model.Jamaica_Italien;
-                result.England_Argentina = model.England_Argentina;
-                result.Nederländerna_Kamerun = model.Nederländerna_Kamerun;
-                result.Kanada_NyaZeeland = model.Kanada_NyaZeeland;
-                result.Sverige_Thailand = model.Sverige_Thailand;
-                result.Usa_Chile = model.Usa_Chile;
-                result.Kina_Spanien = model.Kina_Spanien;
-                result.Sydafrika_Tyskland = model.Sydafrika_Tyskland;
-                result.Nigeria_Frankrike = model.Nigeria_Frankrike;
-                result.Sydkorea_Norge = model.Sydkorea_Norge;
-                result.Italien_Brasilien = model.Italien_Brasilien;
-                result.Jamaica_Australien = model.Jamaica_Australien;
-                result.Japan_England = model.Japan_England;
-                result.Skottland_Argentina = model.Skottland_Argentina;
-                result.Nederländerna_Kanada = model.Nederländerna_Kanada;
-                result.Kamerun_NyaZeeland = model.Kamerun_NyaZeeland;
-                result.Sverige_Usa = model.Sverige_Usa;
-                result.Thailand_Chile = model.Thailand_Chile;
-
+                result.Ungern_Frankrike = model.Ungern_Frankrike;
+                result.Portugal_Tyskland = model.Portugal_Tyskland;
+                result.Spanien_Polen = model.Spanien_Polen;
+                result.Italien_Wales = model.Italien_Wales;
+                result.Schweiz_Turkiet = model.Schweiz_Turkiet;
+                result.Nordmakedonien_Nederländerna = model.Nordmakedonien_Nederländerna;
+                result.Ukraina_Österrike = model.Ukraina_Österrike;
+                result.Ryssland_Danmark = model.Ryssland_Danmark;
+                result.Finland_Belgien = model.Finland_Belgien;
+                result.Tjeckien_England = model.Tjeckien_England;
+                result.Kroatien_Skottland = model.Kroatien_Skottland;
+                result.Slovakien_Spaninen = model.Slovakien_Spaninen;
+                result.Sverige_Polen = model.Sverige_Polen;
+                result.Tyskland_Ungern = model.Tyskland_Ungern;
+                result.Portugal_Frankrike = model.Portugal_Frankrike;
 
 
                 // - - - - - DataLogic_SaveCorrectAnswers.txt - Code area ends - - - - - - - 
@@ -451,43 +450,42 @@ namespace Fotbollstips.Logic
             var logText = string.Format("Namn: {0}, Telefon: {1}, mail: {2}. ", t.Namn, t.PhoneNumber, t.Email);
 
             // - - - - - DataLogic_SaveTipsDataToLogFile.txt - Code area starts - - - - - - - 
-
-            logText += string.Format("Frankrike_Sydkorea: {0},", t.Frankrike_Sydkorea);
-            logText += string.Format("Tyskland_Kina: {0},", t.Tyskland_Kina);
-            logText += string.Format("Spanien_Sydafrika: {0},", t.Spanien_Sydafrika);
-            logText += string.Format("Norge_Nigeria: {0},", t.Norge_Nigeria);
-            logText += string.Format("Australien_Italien: {0},", t.Australien_Italien);
-            logText += string.Format("Brasilien_Jamaica: {0},", t.Brasilien_Jamaica);
+            logText += string.Format("Turkiet_Italien: {0},", t.Turkiet_Italien);
+            logText += string.Format("Wales_Schweiz: {0},", t.Wales_Schweiz);
+            logText += string.Format("Danmark_Finland: {0},", t.Danmark_Finland);
+            logText += string.Format("Belgien_Ryssland: {0},", t.Belgien_Ryssland);
+            logText += string.Format("England_Kroatien: {0},", t.England_Kroatien);
+            logText += string.Format("Österrike_Nordmakedonien: {0},", t.Österrike_Nordmakedonien);
+            logText += string.Format("Nederländerna_Ukraina: {0},", t.Nederländerna_Ukraina);
+            logText += string.Format("Skottland_Tjeckien: {0},", t.Skottland_Tjeckien);
+            logText += string.Format("Polen_Slovakien: {0},", t.Polen_Slovakien);
+            logText += string.Format("Spanien_Sverige: {0},", t.Spanien_Sverige);
+            logText += string.Format("Ungern_Portugal: {0},", t.Ungern_Portugal);
+            logText += string.Format("Frankrike_Tyskland: {0},", t.Frankrike_Tyskland);
+            logText += string.Format("Finland_Ryssland: {0},", t.Finland_Ryssland);
+            logText += string.Format("Turkiet_Wales: {0},", t.Turkiet_Wales);
+            logText += string.Format("Italien_Schweiz: {0},", t.Italien_Schweiz);
+            logText += string.Format("Ukraina_Nordmakedonien: {0},", t.Ukraina_Nordmakedonien);
+            logText += string.Format("Danmark_Belgien: {0},", t.Danmark_Belgien);
+            logText += string.Format("Nederländerna_Österrike: {0},", t.Nederländerna_Österrike);
+            logText += string.Format("Sverige_Slovakien: {0},", t.Sverige_Slovakien);
+            logText += string.Format("Kroatien_Tjeckien: {0},", t.Kroatien_Tjeckien);
             logText += string.Format("England_Skottland: {0},", t.England_Skottland);
-            logText += string.Format("Argentina_Japan: {0},", t.Argentina_Japan);
-            logText += string.Format("Kanada_Kamerun: {0},", t.Kanada_Kamerun);
-            logText += string.Format("Nya Zeeland_Nederländerna: {0},", t.NyaZeeland_Nederländerna);
-            logText += string.Format("Chile_Sverige: {0},", t.Chile_Sverige);
-            logText += string.Format("Usa_Thailand: {0},", t.Usa_Thailand);
-            logText += string.Format("Nigeria_Sydkorea: {0},", t.Nigeria_Sydkorea);
-            logText += string.Format("Tyskland_Spanien: {0},", t.Tyskland_Spanien);
-            logText += string.Format("Frankrike_Norge: {0},", t.Frankrike_Norge);
-            logText += string.Format("Australien_Brasilien: {0},", t.Australien_Brasilien);
-            logText += string.Format("Sydafrika_Kina: {0},", t.Sydafrika_Kina);
-            logText += string.Format("Japan_Skottland: {0},", t.Japan_Skottland);
-            logText += string.Format("Jamaica_Italien: {0},", t.Jamaica_Italien);
-            logText += string.Format("England_Argentina: {0},", t.England_Argentina);
-            logText += string.Format("Nederländerna_Kamerun: {0},", t.Nederländerna_Kamerun);
-            logText += string.Format("Kanada_Nya Zeeland: {0},", t.Kanada_NyaZeeland);
-            logText += string.Format("Sverige_Thailand: {0},", t.Sverige_Thailand);
-            logText += string.Format("Usa_Chile: {0},", t.Usa_Chile);
-            logText += string.Format("Kina_Spanien: {0},", t.Kina_Spanien);
-            logText += string.Format("Sydafrika_Tyskland: {0},", t.Sydafrika_Tyskland);
-            logText += string.Format("Nigeria_Frankrike: {0},", t.Nigeria_Frankrike);
-            logText += string.Format("Sydkorea_Norge: {0},", t.Sydkorea_Norge);
-            logText += string.Format("Italien_Brasilien: {0},", t.Italien_Brasilien);
-            logText += string.Format("Jamaica_Australien: {0},", t.Jamaica_Australien);
-            logText += string.Format("Japan_England: {0},", t.Japan_England);
-            logText += string.Format("Skottland_Argentina: {0},", t.Skottland_Argentina);
-            logText += string.Format("Nederländerna_Kanada: {0},", t.Nederländerna_Kanada);
-            logText += string.Format("Kamerun_Nya Zeeland: {0},", t.Kamerun_NyaZeeland);
-            logText += string.Format("Sverige_Usa: {0},", t.Sverige_Usa);
-            logText += string.Format("Thailand_Chile: {0},", t.Thailand_Chile);
+            logText += string.Format("Ungern_Frankrike: {0},", t.Ungern_Frankrike);
+            logText += string.Format("Portugal_Tyskland: {0},", t.Portugal_Tyskland);
+            logText += string.Format("Spanien_Polen: {0},", t.Spanien_Polen);
+            logText += string.Format("Italien_Wales: {0},", t.Italien_Wales);
+            logText += string.Format("Schweiz_Turkiet: {0},", t.Schweiz_Turkiet);
+            logText += string.Format("Nordmakedonien_Nederländerna: {0},", t.Nordmakedonien_Nederländerna);
+            logText += string.Format("Ukraina_Österrike: {0},", t.Ukraina_Österrike);
+            logText += string.Format("Ryssland_Danmark: {0},", t.Ryssland_Danmark);
+            logText += string.Format("Finland_Belgien: {0},", t.Finland_Belgien);
+            logText += string.Format("Tjeckien_England: {0},", t.Tjeckien_England);
+            logText += string.Format("Kroatien_Skottland: {0},", t.Kroatien_Skottland);
+            logText += string.Format("Slovakien_Spaninen: {0},", t.Slovakien_Spaninen);
+            logText += string.Format("Sverige_Polen: {0},", t.Sverige_Polen);
+            logText += string.Format("Tyskland_Ungern: {0},", t.Tyskland_Ungern);
+            logText += string.Format("Portugal_Frankrike: {0},", t.Portugal_Frankrike);
 
 
             // - - - - - DataLogic_SaveTipsDataToLogFile.txt - Code area ends - - - - - - - 
