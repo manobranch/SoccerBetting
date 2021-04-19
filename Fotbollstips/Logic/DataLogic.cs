@@ -107,162 +107,127 @@ namespace Fotbollstips.Logic
         }
 
 
-        private static List<TipsData> CalculatePoints(List<TipsData> data)
+        private static List<TipsData> CalculatePoints(List<TipsData> rows)
         {
-            var correct = (from hits in data
+            var correct = (from hits in rows
                            where hits.Namn == RATT_SVAR
                            select hits).FirstOrDefault();
 
-            data = (from hits in data
+            rows = (from hits in rows
                     select hits).ToList();
 
-            foreach (var item in data)
+            foreach (var row in rows)
             {
-                if (item.Namn == RATT_SVAR)
+                if (row.Namn == RATT_SVAR)
                 {
-                    item.Poäng = 39;
+                    row.Poäng = 39;
                     continue;
                 }
                 int points = 0;
 
                 #region compare games
 
-
                 // - - - - - DataLogic_CalculatePoints.txt - Code area starts - - - - - - - 
-                if (item.Turkiet_Italien == correct.Turkiet_Italien)
-                    points++;
-
-                if (item.Wales_Schweiz == correct.Wales_Schweiz)
-                    points++;
-
-                if (item.Danmark_Finland == correct.Danmark_Finland)
-                    points++;
-
-                if (item.Belgien_Ryssland == correct.Belgien_Ryssland)
-                    points++;
-
-                if (item.England_Kroatien == correct.England_Kroatien)
-                    points++;
-
-                if (item.Österrike_Nordmakedonien == correct.Österrike_Nordmakedonien)
-                    points++;
-
-                if (item.Nederländerna_Ukraina == correct.Nederländerna_Ukraina)
-                    points++;
-
-                if (item.Skottland_Tjeckien == correct.Skottland_Tjeckien)
-                    points++;
-
-                if (item.Polen_Slovakien == correct.Polen_Slovakien)
-                    points++;
-
-                if (item.Spanien_Sverige == correct.Spanien_Sverige)
-                    points++;
-
-                if (item.Ungern_Portugal == correct.Ungern_Portugal)
-                    points++;
-
-                if (item.Frankrike_Tyskland == correct.Frankrike_Tyskland)
-                    points++;
-
-                if (item.Finland_Ryssland == correct.Finland_Ryssland)
-                    points++;
-
-                if (item.Turkiet_Wales == correct.Turkiet_Wales)
-                    points++;
-
-                if (item.Italien_Schweiz == correct.Italien_Schweiz)
-                    points++;
-
-                if (item.Ukraina_Nordmakedonien == correct.Ukraina_Nordmakedonien)
-                    points++;
-
-                if (item.Danmark_Belgien == correct.Danmark_Belgien)
-                    points++;
-
-                if (item.Nederländerna_Österrike == correct.Nederländerna_Österrike)
-                    points++;
-
-                if (item.Sverige_Slovakien == correct.Sverige_Slovakien)
-                    points++;
-
-                if (item.Kroatien_Tjeckien == correct.Kroatien_Tjeckien)
-                    points++;
-
-                if (item.England_Skottland == correct.England_Skottland)
-                    points++;
-
-                if (item.Ungern_Frankrike == correct.Ungern_Frankrike)
-                    points++;
-
-                if (item.Portugal_Tyskland == correct.Portugal_Tyskland)
-                    points++;
-
-                if (item.Spanien_Polen == correct.Spanien_Polen)
-                    points++;
-
-                if (item.Italien_Wales == correct.Italien_Wales)
-                    points++;
-
-                if (item.Schweiz_Turkiet == correct.Schweiz_Turkiet)
-                    points++;
-
-                if (item.Nordmakedonien_Nederländerna == correct.Nordmakedonien_Nederländerna)
-                    points++;
-
-                if (item.Ukraina_Österrike == correct.Ukraina_Österrike)
-                    points++;
-
-                if (item.Ryssland_Danmark == correct.Ryssland_Danmark)
-                    points++;
-
-                if (item.Finland_Belgien == correct.Finland_Belgien)
-                    points++;
-
-                if (item.Tjeckien_England == correct.Tjeckien_England)
-                    points++;
-
-                if (item.Kroatien_Skottland == correct.Kroatien_Skottland)
-                    points++;
-
-                if (item.Slovakien_Spaninen == correct.Slovakien_Spaninen)
-                    points++;
-
-                if (item.Sverige_Polen == correct.Sverige_Polen)
-                    points++;
-
-                if (item.Tyskland_Ungern == correct.Tyskland_Ungern)
-                    points++;
-
-                if (item.Portugal_Frankrike == correct.Portugal_Frankrike)
-                    points++;
-
-
-
-
-
-
-
+                points += CalculateGamePoints(row.Turkiet_Italien, correct.Turkiet_Italien);
+                points += CalculateGamePoints(row.Wales_Schweiz, correct.Wales_Schweiz);
+                points += CalculateGamePoints(row.Danmark_Finland, correct.Danmark_Finland);
+                points += CalculateGamePoints(row.Belgien_Ryssland, correct.Belgien_Ryssland);
+                points += CalculateGamePoints(row.England_Kroatien, correct.England_Kroatien);
+                points += CalculateGamePoints(row.Österrike_Nordmakedonien, correct.Österrike_Nordmakedonien);
+                points += CalculateGamePoints(row.Nederländerna_Ukraina, correct.Nederländerna_Ukraina);
+                points += CalculateGamePoints(row.Skottland_Tjeckien, correct.Skottland_Tjeckien);
+                points += CalculateGamePoints(row.Polen_Slovakien, correct.Polen_Slovakien);
+                points += CalculateGamePoints(row.Spanien_Sverige, correct.Spanien_Sverige);
+                points += CalculateGamePoints(row.Ungern_Portugal, correct.Ungern_Portugal);
+                points += CalculateGamePoints(row.Frankrike_Tyskland, correct.Frankrike_Tyskland);
+                points += CalculateGamePoints(row.Finland_Ryssland, correct.Finland_Ryssland);
+                points += CalculateGamePoints(row.Turkiet_Wales, correct.Turkiet_Wales);
+                points += CalculateGamePoints(row.Italien_Schweiz, correct.Italien_Schweiz);
+                points += CalculateGamePoints(row.Ukraina_Nordmakedonien, correct.Ukraina_Nordmakedonien);
+                points += CalculateGamePoints(row.Danmark_Belgien, correct.Danmark_Belgien);
+                points += CalculateGamePoints(row.Nederländerna_Österrike, correct.Nederländerna_Österrike);
+                points += CalculateGamePoints(row.Sverige_Slovakien, correct.Sverige_Slovakien);
+                points += CalculateGamePoints(row.Kroatien_Tjeckien, correct.Kroatien_Tjeckien);
+                points += CalculateGamePoints(row.England_Skottland, correct.England_Skottland);
+                points += CalculateGamePoints(row.Ungern_Frankrike, correct.Ungern_Frankrike);
+                points += CalculateGamePoints(row.Portugal_Tyskland, correct.Portugal_Tyskland);
+                points += CalculateGamePoints(row.Spanien_Polen, correct.Spanien_Polen);
+                points += CalculateGamePoints(row.Italien_Wales, correct.Italien_Wales);
+                points += CalculateGamePoints(row.Schweiz_Turkiet, correct.Schweiz_Turkiet);
+                points += CalculateGamePoints(row.Nordmakedonien_Nederländerna, correct.Nordmakedonien_Nederländerna);
+                points += CalculateGamePoints(row.Ukraina_Österrike, correct.Ukraina_Österrike);
+                points += CalculateGamePoints(row.Ryssland_Danmark, correct.Ryssland_Danmark);
+                points += CalculateGamePoints(row.Finland_Belgien, correct.Finland_Belgien);
+                points += CalculateGamePoints(row.Tjeckien_England, correct.Tjeckien_England);
+                points += CalculateGamePoints(row.Kroatien_Skottland, correct.Kroatien_Skottland);
+                points += CalculateGamePoints(row.Slovakien_Spaninen, correct.Slovakien_Spaninen);
+                points += CalculateGamePoints(row.Sverige_Polen, correct.Sverige_Polen);
+                points += CalculateGamePoints(row.Tyskland_Ungern, correct.Tyskland_Ungern);
+                points += CalculateGamePoints(row.Portugal_Frankrike, correct.Portugal_Frankrike);
 
 
                 // - - - - - DataLogic_CalculatePoints.txt - Code area ends - - - - - - - 
 
 
-                if (CompareFinal(item.Finallag1, correct.Finallag1))
+                if (CompareFinal(row.Finallag1, correct.Finallag1))
                     points++;
 
-                if (CompareFinal(item.Finallag2, correct.Finallag2))
+                if (CompareFinal(row.Finallag2, correct.Finallag2))
                     points++;
 
-                if (CompareFinal(item.Vinnare, correct.Vinnare))
+                if (CompareFinal(row.Vinnare, correct.Vinnare))
                     points++;
 
                 #endregion
 
-                item.Poäng = points;
+
+
+                row.Poäng = points;
             }
 
-            return data;
+            return rows;
+        }
+
+        private static int CalculateGamePoints(string row, string corr)
+        {
+            if (corr.Length != 2)
+                return 0;
+
+            if (row == corr)
+                return 3;
+
+            if (CorrectWinner(row, corr))
+                return 1;
+
+            return 0;
+        }
+
+        private static bool CorrectWinner(string row, string corr)
+        {
+            var rowWinner = GetWinner(row);
+            var corrWinner = GetWinner(corr);
+
+            return rowWinner == corrWinner;
+        }
+
+        private static WinningTeam GetWinner(string result)
+        {
+            var home = Convert.ToInt32(result[0].ToString());
+            var away = Convert.ToInt32(result[1].ToString());
+
+            if (home > away)
+                return WinningTeam.Home;
+            else if (home == away)
+                return WinningTeam.Draw;
+            else
+                return WinningTeam.Away;
+        }
+
+        enum WinningTeam
+        {
+            Home,
+            Draw,
+            Away,
         }
 
         private static bool CompareFinal(string finalTeam, string correctAnswer)

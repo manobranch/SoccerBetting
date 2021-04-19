@@ -151,48 +151,53 @@
             correctTeams.Add(Model[0].Finallag1);
             correctTeams.Add(Model[0].Finallag2);
 
-            var final1 = (correctTeams.Any(item.Finallag1.Contains)) ? "color:#00D600" : "";
-            var final2 = (correctTeams.Any(item.Finallag2.Contains)) ? "color:#00D600" : "";
+            var final1 = (correctTeams.Any(item.Finallag1.Contains)) ? "background-color:#00D600" : "";
+            var final2 = (correctTeams.Any(item.Finallag2.Contains)) ? "background-color:#00D600" : "";
 
-            var vinnare = (item.Vinnare == Model[0].Vinnare) ? "color:#00D600" : "";
+            var vinnare = (item.Vinnare == Model[0].Vinnare) ? "background-color:#00D600" : "";
+
+
+            //var engkro = (item.England_Kroatien == Model[0].England_Kroatien) ? "background-color:#00D600" : "";
+            //var östnor = (item.Österrike_Nordmakedonien == Model[0].Österrike_Nordmakedonien) ? "background-color:#b3ffb3" : "";
+
 
             // - - - - - IndexCshtml_ForeachItemInModel.txt - Code area starts - - - - - - -
-            var turita = (item.Turkiet_Italien == Model[0].Turkiet_Italien) ? "color:#00D600" : "";
-            var walsch = (item.Wales_Schweiz == Model[0].Wales_Schweiz) ? "color:#00D600" : "";
-            var danfin = (item.Danmark_Finland == Model[0].Danmark_Finland) ? "color:#00D600" : "";
-            var belrys = (item.Belgien_Ryssland == Model[0].Belgien_Ryssland) ? "color:#00D600" : "";
-            var engkro = (item.England_Kroatien == Model[0].England_Kroatien) ? "color:#00D600" : "";
-            var östnor = (item.Österrike_Nordmakedonien == Model[0].Österrike_Nordmakedonien) ? "color:#00D600" : "";
-            var nedukr = (item.Nederländerna_Ukraina == Model[0].Nederländerna_Ukraina) ? "color:#00D600" : "";
-            var skotje = (item.Skottland_Tjeckien == Model[0].Skottland_Tjeckien) ? "color:#00D600" : "";
-            var polslo = (item.Polen_Slovakien == Model[0].Polen_Slovakien) ? "color:#00D600" : "";
-            var spasve = (item.Spanien_Sverige == Model[0].Spanien_Sverige) ? "color:#00D600" : "";
-            var ungpor = (item.Ungern_Portugal == Model[0].Ungern_Portugal) ? "color:#00D600" : "";
-            var fratys = (item.Frankrike_Tyskland == Model[0].Frankrike_Tyskland) ? "color:#00D600" : "";
-            var finrys = (item.Finland_Ryssland == Model[0].Finland_Ryssland) ? "color:#00D600" : "";
-            var turwal = (item.Turkiet_Wales == Model[0].Turkiet_Wales) ? "color:#00D600" : "";
-            var itasch = (item.Italien_Schweiz == Model[0].Italien_Schweiz) ? "color:#00D600" : "";
-            var ukrnor = (item.Ukraina_Nordmakedonien == Model[0].Ukraina_Nordmakedonien) ? "color:#00D600" : "";
-            var danbel = (item.Danmark_Belgien == Model[0].Danmark_Belgien) ? "color:#00D600" : "";
-            var nedöst = (item.Nederländerna_Österrike == Model[0].Nederländerna_Österrike) ? "color:#00D600" : "";
-            var sveslo = (item.Sverige_Slovakien == Model[0].Sverige_Slovakien) ? "color:#00D600" : "";
-            var krotje = (item.Kroatien_Tjeckien == Model[0].Kroatien_Tjeckien) ? "color:#00D600" : "";
-            var engsko = (item.England_Skottland == Model[0].England_Skottland) ? "color:#00D600" : "";
-            var ungfra = (item.Ungern_Frankrike == Model[0].Ungern_Frankrike) ? "color:#00D600" : "";
-            var portys = (item.Portugal_Tyskland == Model[0].Portugal_Tyskland) ? "color:#00D600" : "";
-            var spapol = (item.Spanien_Polen == Model[0].Spanien_Polen) ? "color:#00D600" : "";
-            var itawal = (item.Italien_Wales == Model[0].Italien_Wales) ? "color:#00D600" : "";
-            var schtur = (item.Schweiz_Turkiet == Model[0].Schweiz_Turkiet) ? "color:#00D600" : "";
-            var norned = (item.Nordmakedonien_Nederländerna == Model[0].Nordmakedonien_Nederländerna) ? "color:#00D600" : "";
-            var ukröst = (item.Ukraina_Österrike == Model[0].Ukraina_Österrike) ? "color:#00D600" : "";
-            var rysdan = (item.Ryssland_Danmark == Model[0].Ryssland_Danmark) ? "color:#00D600" : "";
-            var finbel = (item.Finland_Belgien == Model[0].Finland_Belgien) ? "color:#00D600" : "";
-            var tjeeng = (item.Tjeckien_England == Model[0].Tjeckien_England) ? "color:#00D600" : "";
-            var krosko = (item.Kroatien_Skottland == Model[0].Kroatien_Skottland) ? "color:#00D600" : "";
-            var slospa = (item.Slovakien_Spaninen == Model[0].Slovakien_Spaninen) ? "color:#00D600" : "";
-            var svepol = (item.Sverige_Polen == Model[0].Sverige_Polen) ? "color:#00D600" : "";
-            var tysung = (item.Tyskland_Ungern == Model[0].Tyskland_Ungern) ? "color:#00D600" : "";
-            var porfra = (item.Portugal_Frankrike == Model[0].Portugal_Frankrike) ? "color:#00D600" : "";
+            var turita = (item.Turkiet_Italien == Model[0].Turkiet_Italien) ? "background-color:#00D600" : "";
+            var walsch = (item.Wales_Schweiz == Model[0].Wales_Schweiz) ? "background-color:#00D600" : "";
+            var danfin = (item.Danmark_Finland == Model[0].Danmark_Finland) ? "background-color:#b3ffb3" : "";
+            var belrys = (item.Belgien_Ryssland == Model[0].Belgien_Ryssland) ? "background-color:#00D600" : "";
+            var engkro = (item.England_Kroatien == Model[0].England_Kroatien) ? "background-color:#00D600" : "";
+            var östnor = (item.Österrike_Nordmakedonien == Model[0].Österrike_Nordmakedonien) ? "background-color:#00D600" : "";
+            var nedukr = (item.Nederländerna_Ukraina == Model[0].Nederländerna_Ukraina) ? "background-color:#00D600" : "";
+            var skotje = (item.Skottland_Tjeckien == Model[0].Skottland_Tjeckien) ? "background-color:#00D600" : "";
+            var polslo = (item.Polen_Slovakien == Model[0].Polen_Slovakien) ? "background-color:#00D600" : "";
+            var spasve = (item.Spanien_Sverige == Model[0].Spanien_Sverige) ? "background-color:#00D600" : "";
+            var ungpor = (item.Ungern_Portugal == Model[0].Ungern_Portugal) ? "background-color:#00D600" : "";
+            var fratys = (item.Frankrike_Tyskland == Model[0].Frankrike_Tyskland) ? "background-color:#00D600" : "";
+            var finrys = (item.Finland_Ryssland == Model[0].Finland_Ryssland) ? "background-color:#00D600" : "";
+            var turwal = (item.Turkiet_Wales == Model[0].Turkiet_Wales) ? "background-color:#00D600" : "";
+            var itasch = (item.Italien_Schweiz == Model[0].Italien_Schweiz) ? "background-color:#00D600" : "";
+            var ukrnor = (item.Ukraina_Nordmakedonien == Model[0].Ukraina_Nordmakedonien) ? "background-color:#00D600" : "";
+            var danbel = (item.Danmark_Belgien == Model[0].Danmark_Belgien) ? "background-color:#00D600" : "";
+            var nedöst = (item.Nederländerna_Österrike == Model[0].Nederländerna_Österrike) ? "background-color:#00D600" : "";
+            var sveslo = (item.Sverige_Slovakien == Model[0].Sverige_Slovakien) ? "background-color:#00D600" : "";
+            var krotje = (item.Kroatien_Tjeckien == Model[0].Kroatien_Tjeckien) ? "background-color:#00D600" : "";
+            var engsko = (item.England_Skottland == Model[0].England_Skottland) ? "background-color:#00D600" : "";
+            var ungfra = (item.Ungern_Frankrike == Model[0].Ungern_Frankrike) ? "background-color:#00D600" : "";
+            var portys = (item.Portugal_Tyskland == Model[0].Portugal_Tyskland) ? "background-color:#00D600" : "";
+            var spapol = (item.Spanien_Polen == Model[0].Spanien_Polen) ? "background-color:#00D600" : "";
+            var itawal = (item.Italien_Wales == Model[0].Italien_Wales) ? "background-color:#00D600" : "";
+            var schtur = (item.Schweiz_Turkiet == Model[0].Schweiz_Turkiet) ? "background-color:#00D600" : "";
+            var norned = (item.Nordmakedonien_Nederländerna == Model[0].Nordmakedonien_Nederländerna) ? "background-color:#00D600" : "";
+            var ukröst = (item.Ukraina_Österrike == Model[0].Ukraina_Österrike) ? "background-color:#00D600" : "";
+            var rysdan = (item.Ryssland_Danmark == Model[0].Ryssland_Danmark) ? "background-color:#00D600" : "";
+            var finbel = (item.Finland_Belgien == Model[0].Finland_Belgien) ? "background-color:#00D600" : "";
+            var tjeeng = (item.Tjeckien_England == Model[0].Tjeckien_England) ? "background-color:#00D600" : "";
+            var krosko = (item.Kroatien_Skottland == Model[0].Kroatien_Skottland) ? "background-color:#00D600" : "";
+            var slospa = (item.Slovakien_Spaninen == Model[0].Slovakien_Spaninen) ? "background-color:#00D600" : "";
+            var svepol = (item.Sverige_Polen == Model[0].Sverige_Polen) ? "background-color:#00D600" : "";
+            var tysung = (item.Tyskland_Ungern == Model[0].Tyskland_Ungern) ? "background-color:#00D600" : "";
+            var porfra = (item.Portugal_Frankrike == Model[0].Portugal_Frankrike) ? "background-color:#00D600" : "";
 
 
 
