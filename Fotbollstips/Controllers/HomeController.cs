@@ -1,4 +1,5 @@
 ﻿using Fotbollstips.Logic;
+using Fotbollstips.Models;
 using log4net;
 using PdfSharp.Pdf;
 using System;
@@ -27,7 +28,15 @@ namespace Fotbollstips.Controllers
 
                 return View("PreTournament", tipsData);
             }
-            return View(tipsData.ToList());
+
+            var returnList = new List<TipsDataDisplay>();
+
+            foreach (var data in tipsData)
+            {
+                returnList.Add(new TipsDataDisplay(data));
+            }
+
+            return View(returnList.ToList());
         }
 
         //public ActionResult About()
