@@ -1,4 +1,5 @@
-﻿using Fotbollstips.Objects;
+﻿using Fotbollstips.Models;
+using Fotbollstips.Objects;
 using PdfSharp.Pdf;
 using System;
 using System.Collections.Generic;
@@ -201,6 +202,27 @@ namespace Fotbollstips.Logic
         {
             var blobWorker = new StorageLogic();
             return blobWorker.GetFileFromFileStorage();
+        }
+
+        public static List<TipsDataDisplay> KneadTheData(List<TipsData> rawData)
+        {
+            var displayList = new List<TipsDataDisplay>();
+
+            foreach (var data in rawData)
+            {
+                displayList.Add(new TipsDataDisplay(data));
+            }
+
+            // Calculate points
+            displayList = DataLogic.CalculatePoints(displayList);
+
+            // Sort list by points
+            displayList = displayList.OrderByDescending(o => o.Poäng).ToList();
+
+            // Manipulate text string 
+            displayList = DataLogic.ManipulateTextStrings(displayList);
+
+            return displayList;
         }
     }
 }

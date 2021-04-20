@@ -1,352 +1,360 @@
 ﻿@model List<Fotbollstips.Models.TipsDataDisplay>
-@{
+    @{
     ViewBag.Title = "Resultat";
-}
+    }
 
-<div class="jumbotron">
-    <h2>Resultat för EM-tipset 2021</h2>
-    <p>Totalt är xx rader inlämnade vilket innebär yy kr till vinnaren.</p>
-</div>
-<div>
-    <table>
-        <tr>
-            <th>
-                Namn
-            </th>
-            <th>
-                Poäng
-            </th>
-            <th>
-                Finallag 1
-            </th>
-            <th>
-                Finallag 2
-            </th>
-            <th>
-                Vinnare finalen
-            </th>
+    <div class="jumbotron">
+        <h2>Resultat för EM-tipset 2021</h2>
+        <p>Totalt är xx rader inlämnade vilket innebär yy kr till vinnaren.</p>
+        <div>
+            <p>Färgförklaring:</p>
+            <table>
+                <tr>
+                    <td style="background-color:#00D600">
+                        3 poäng, dvs rätt resultat
+                    </td>
 
-            @*- - - - - IndexCshtml_OnlyTh.txt - Code area starts - - - - - - - *@
-            <th>
-                Tur-Ita
-            </th>
-            <th>
-                Wal-Sch
-            </th>
-            <th>
-                Dan-Fin
-            </th>
-            <th>
-                Bel-Rys
-            </th>
-            <th>
-                Eng-Kro
-            </th>
-            <th>
-                Öst-Nor
-            </th>
-            <th>
-                Ned-Ukr
-            </th>
-            <th>
-                Sko-Tje
-            </th>
-            <th>
-                Pol-Slo
-            </th>
-            <th>
-                Spa-Sve
-            </th>
-            <th>
-                Ung-Por
-            </th>
-            <th>
-                Fra-Tys
-            </th>
-            <th>
-                Fin-Rys
-            </th>
-            <th>
-                Tur-Wal
-            </th>
-            <th>
-                Ita-Sch
-            </th>
-            <th>
-                Ukr-Nor
-            </th>
-            <th>
-                Dan-Bel
-            </th>
-            <th>
-                Ned-Öst
-            </th>
-            <th>
-                Sve-Slo
-            </th>
-            <th>
-                Kro-Tje
-            </th>
-            <th>
-                Eng-Sko
-            </th>
-            <th>
-                Ung-Fra
-            </th>
-            <th>
-                Por-Tys
-            </th>
-            <th>
-                Spa-Pol
-            </th>
-            <th>
-                Ita-Wal
-            </th>
-            <th>
-                Sch-Tur
-            </th>
-            <th>
-                Nor-Ned
-            </th>
-            <th>
-                Ukr-Öst
-            </th>
-            <th>
-                Rys-Dan
-            </th>
-            <th>
-                Fin-Bel
-            </th>
-            <th>
-                Tje-Eng
-            </th>
-            <th>
-                Kro-Sko
-            </th>
-            <th>
-                Slo-Spa
-            </th>
-            <th>
-                Sve-Pol
-            </th>
-            <th>
-                Tys-Ung
-            </th>
-            <th>
-                Por-Fra
-            </th>
+                </tr>
+                <tr>
+                    <td style="background-color:#b3ffb3">
+                        1 poäng, dvs rätt vinnare/oavgjort
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
+    <div>
+        <table>
+            <tr>
+                <th>
+                    Namn
+                </th>
+                <th>
+                    Poäng
+                </th>
+                <th>
+                    Finallag 1
+                </th>
+                <th>
+                    Finallag 2
+                </th>
+                <th>
+                    Vinnare finalen
+                </th>
 
-
-
-
-            @*- - - - - IndexCshtml_OnlyTh.txt - Code area ends - - - - - - -*@
-
-        </tr>
-
-        @foreach (var item in Model)
-        {
-            List<string> correctTeams = new List<string>();
-
-            correctTeams.Add(Model[0].Finallag1);
-            correctTeams.Add(Model[0].Finallag2);
-
-            var final1 = (correctTeams.Any(item.Finallag1.Contains)) ? "background-color:#00D600" : "";
-            var final2 = (correctTeams.Any(item.Finallag2.Contains)) ? "background-color:#00D600" : "";
-
-            var vinnare = (item.Vinnare == Model[0].Vinnare) ? "background-color:#00D600" : "";
+                @*- - - - - IndexCshtml_OnlyTh.txt - Code area starts - - - - - - - *@
+                <th>
+                    Tur-Ita
+                </th>
+                <th>
+                    Wal-Sch
+                </th>
+                <th>
+                    Dan-Fin
+                </th>
+                <th>
+                    Bel-Rys
+                </th>
+                <th>
+                    Eng-Kro
+                </th>
+                <th>
+                    Öst-Nor
+                </th>
+                <th>
+                    Ned-Ukr
+                </th>
+                <th>
+                    Sko-Tje
+                </th>
+                <th>
+                    Pol-Slo
+                </th>
+                <th>
+                    Spa-Sve
+                </th>
+                <th>
+                    Ung-Por
+                </th>
+                <th>
+                    Fra-Tys
+                </th>
+                <th>
+                    Fin-Rys
+                </th>
+                <th>
+                    Tur-Wal
+                </th>
+                <th>
+                    Ita-Sch
+                </th>
+                <th>
+                    Ukr-Nor
+                </th>
+                <th>
+                    Dan-Bel
+                </th>
+                <th>
+                    Ned-Öst
+                </th>
+                <th>
+                    Sve-Slo
+                </th>
+                <th>
+                    Kro-Tje
+                </th>
+                <th>
+                    Eng-Sko
+                </th>
+                <th>
+                    Ung-Fra
+                </th>
+                <th>
+                    Por-Tys
+                </th>
+                <th>
+                    Spa-Pol
+                </th>
+                <th>
+                    Ita-Wal
+                </th>
+                <th>
+                    Sch-Tur
+                </th>
+                <th>
+                    Nor-Ned
+                </th>
+                <th>
+                    Ukr-Öst
+                </th>
+                <th>
+                    Rys-Dan
+                </th>
+                <th>
+                    Fin-Bel
+                </th>
+                <th>
+                    Tje-Eng
+                </th>
+                <th>
+                    Kro-Sko
+                </th>
+                <th>
+                    Slo-Spa
+                </th>
+                <th>
+                    Sve-Pol
+                </th>
+                <th>
+                    Tys-Ung
+                </th>
+                <th>
+                    Por-Fra
+                </th>
 
 
-            //var engkro = (item.England_Kroatien == Model[0].England_Kroatien) ? "background-color:#00D600" : "";
-            //var östnor = (item.Österrike_Nordmakedonien == Model[0].Österrike_Nordmakedonien) ? "background-color:#b3ffb3" : "";
 
+
+
+                @*- - - - - IndexCshtml_OnlyTh.txt - Code area ends - - - - - - -*@
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+
+
+            var final1 = item.Finallag1_Color;
+            var final2 = item.Finallag2_Color;
+            var vinnare = item.Vinnare_Color;
 
             // - - - - - IndexCshtml_ForeachItemInModel.txt - Code area starts - - - - - - -
-            var turita = (item.Turkiet_Italien == Model[0].Turkiet_Italien) ? "background-color:#00D600" : "";
-            var walsch = (item.Wales_Schweiz == Model[0].Wales_Schweiz) ? "background-color:#00D600" : "";
-            var danfin = (item.Danmark_Finland == Model[0].Danmark_Finland) ? "background-color:#b3ffb3" : "";
-            var belrys = (item.Belgien_Ryssland == Model[0].Belgien_Ryssland) ? "background-color:#00D600" : "";
-            var engkro = (item.England_Kroatien == Model[0].England_Kroatien) ? "background-color:#00D600" : "";
-            var östnor = (item.Österrike_Nordmakedonien == Model[0].Österrike_Nordmakedonien) ? "background-color:#00D600" : "";
-            var nedukr = (item.Nederländerna_Ukraina == Model[0].Nederländerna_Ukraina) ? "background-color:#00D600" : "";
-            var skotje = (item.Skottland_Tjeckien == Model[0].Skottland_Tjeckien) ? "background-color:#00D600" : "";
-            var polslo = (item.Polen_Slovakien == Model[0].Polen_Slovakien) ? "background-color:#00D600" : "";
-            var spasve = (item.Spanien_Sverige == Model[0].Spanien_Sverige) ? "background-color:#00D600" : "";
-            var ungpor = (item.Ungern_Portugal == Model[0].Ungern_Portugal) ? "background-color:#00D600" : "";
-            var fratys = (item.Frankrike_Tyskland == Model[0].Frankrike_Tyskland) ? "background-color:#00D600" : "";
-            var finrys = (item.Finland_Ryssland == Model[0].Finland_Ryssland) ? "background-color:#00D600" : "";
-            var turwal = (item.Turkiet_Wales == Model[0].Turkiet_Wales) ? "background-color:#00D600" : "";
-            var itasch = (item.Italien_Schweiz == Model[0].Italien_Schweiz) ? "background-color:#00D600" : "";
-            var ukrnor = (item.Ukraina_Nordmakedonien == Model[0].Ukraina_Nordmakedonien) ? "background-color:#00D600" : "";
-            var danbel = (item.Danmark_Belgien == Model[0].Danmark_Belgien) ? "background-color:#00D600" : "";
-            var nedöst = (item.Nederländerna_Österrike == Model[0].Nederländerna_Österrike) ? "background-color:#00D600" : "";
-            var sveslo = (item.Sverige_Slovakien == Model[0].Sverige_Slovakien) ? "background-color:#00D600" : "";
-            var krotje = (item.Kroatien_Tjeckien == Model[0].Kroatien_Tjeckien) ? "background-color:#00D600" : "";
-            var engsko = (item.England_Skottland == Model[0].England_Skottland) ? "background-color:#00D600" : "";
-            var ungfra = (item.Ungern_Frankrike == Model[0].Ungern_Frankrike) ? "background-color:#00D600" : "";
-            var portys = (item.Portugal_Tyskland == Model[0].Portugal_Tyskland) ? "background-color:#00D600" : "";
-            var spapol = (item.Spanien_Polen == Model[0].Spanien_Polen) ? "background-color:#00D600" : "";
-            var itawal = (item.Italien_Wales == Model[0].Italien_Wales) ? "background-color:#00D600" : "";
-            var schtur = (item.Schweiz_Turkiet == Model[0].Schweiz_Turkiet) ? "background-color:#00D600" : "";
-            var norned = (item.Nordmakedonien_Nederländerna == Model[0].Nordmakedonien_Nederländerna) ? "background-color:#00D600" : "";
-            var ukröst = (item.Ukraina_Österrike == Model[0].Ukraina_Österrike) ? "background-color:#00D600" : "";
-            var rysdan = (item.Ryssland_Danmark == Model[0].Ryssland_Danmark) ? "background-color:#00D600" : "";
-            var finbel = (item.Finland_Belgien == Model[0].Finland_Belgien) ? "background-color:#00D600" : "";
-            var tjeeng = (item.Tjeckien_England == Model[0].Tjeckien_England) ? "background-color:#00D600" : "";
-            var krosko = (item.Kroatien_Skottland == Model[0].Kroatien_Skottland) ? "background-color:#00D600" : "";
-            var slospa = (item.Slovakien_Spaninen == Model[0].Slovakien_Spaninen) ? "background-color:#00D600" : "";
-            var svepol = (item.Sverige_Polen == Model[0].Sverige_Polen) ? "background-color:#00D600" : "";
-            var tysung = (item.Tyskland_Ungern == Model[0].Tyskland_Ungern) ? "background-color:#00D600" : "";
-            var porfra = (item.Portugal_Frankrike == Model[0].Portugal_Frankrike) ? "background-color:#00D600" : "";
+            var turita = item.Turkiet_Italien_Color;
+            var walsch = item.Wales_Schweiz_Color;
+            var danfin = item.Danmark_Finland_Color;
+            var belrys = item.Belgien_Ryssland_Color;
+            var engkro = item.England_Kroatien_Color;
+            var östnor = item.Österrike_Nordmakedonien_Color;
+            var nedukr = item.Nederländerna_Ukraina_Color;
+            var skotje = item.Skottland_Tjeckien_Color;
+            var polslo = item.Polen_Slovakien_Color;
+            var spasve = item.Spanien_Sverige_Color;
+            var ungpor = item.Ungern_Portugal_Color;
+            var fratys = item.Frankrike_Tyskland_Color;
+            var finrys = item.Finland_Ryssland_Color;
+            var turwal = item.Turkiet_Wales_Color;
+            var itasch = item.Italien_Schweiz_Color;
+            var ukrnor = item.Ukraina_Nordmakedonien_Color;
+            var danbel = item.Danmark_Belgien_Color;
+            var nedöst = item.Nederländerna_Österrike_Color;
+            var sveslo = item.Sverige_Slovakien_Color;
+            var krotje = item.Kroatien_Tjeckien_Color;
+            var engsko = item.England_Skottland_Color;
+            var ungfra = item.Ungern_Frankrike_Color;
+            var portys = item.Portugal_Tyskland_Color;
+            var spapol = item.Spanien_Polen_Color;
+            var itawal = item.Italien_Wales_Color;
+            var schtur = item.Schweiz_Turkiet_Color;
+            var norned = item.Nordmakedonien_Nederländerna_Color;
+            var ukröst = item.Ukraina_Österrike_Color;
+            var rysdan = item.Ryssland_Danmark_Color;
+            var finbel = item.Finland_Belgien_Color;
+            var tjeeng = item.Tjeckien_England_Color;
+            var krosko = item.Kroatien_Skottland_Color;
+            var slospa = item.Slovakien_Spaninen_Color;
+            var svepol = item.Sverige_Polen_Color;
+            var tysung = item.Tyskland_Ungern_Color;
+            var porfra = item.Portugal_Frankrike_Color;
 
 
 
             // - - - - - Index.cshtml_ForeachItemInModel.txt - Code area ends - - - - - - -
 
-    <tr>
-        <td>
-            @item.Namn
-        </td>
-        <td>
-            @item.Poäng
-        </td>
-        <td style="@final1">
-            @item.Finallag1
-        </td>
-        <td style="@final2">
-            @item.Finallag2
-        </td>
-        <td style="@vinnare">
-            @item.Vinnare
-        </td>
+            <tr>
+                <td>
+                    @item.Namn
+                </td>
+                <td>
+                    @item.Poäng
+                </td>
+                <td style="@final1">
+                    @item.Finallag1
+                </td>
+                <td style="@final2">
+                    @item.Finallag2
+                </td>
+                <td style="@vinnare">
+                    @item.Vinnare
+                </td>
 
-        @* - - - - - IndexCshtml_TrTd.txt - Code area starts - - - - - - -*@
-        @******** Note: Add this a good places:
-        <td>
-            @item.Namn
-        </td>
-        <td>
-            @item.Poäng
-        </td>
-        *@
-        <td style="@turita">
-            @item.Turkiet_Italien
-        </td>
-        <td style="@walsch">
-            @item.Wales_Schweiz
-        </td>
-        <td style="@danfin">
-            @item.Danmark_Finland
-        </td>
-        <td style="@belrys">
-            @item.Belgien_Ryssland
-        </td>
-        <td style="@engkro">
-            @item.England_Kroatien
-        </td>
-        <td style="@östnor">
-            @item.Österrike_Nordmakedonien
-        </td>
-        <td style="@nedukr">
-            @item.Nederländerna_Ukraina
-        </td>
-        <td style="@skotje">
-            @item.Skottland_Tjeckien
-        </td>
-        <td style="@polslo">
-            @item.Polen_Slovakien
-        </td>
-        <td style="@spasve">
-            @item.Spanien_Sverige
-        </td>
-        <td style="@ungpor">
-            @item.Ungern_Portugal
-        </td>
-        <td style="@fratys">
-            @item.Frankrike_Tyskland
-        </td>
-        <td style="@finrys">
-            @item.Finland_Ryssland
-        </td>
-        <td style="@turwal">
-            @item.Turkiet_Wales
-        </td>
-        <td style="@itasch">
-            @item.Italien_Schweiz
-        </td>
-        <td style="@ukrnor">
-            @item.Ukraina_Nordmakedonien
-        </td>
-        <td style="@danbel">
-            @item.Danmark_Belgien
-        </td>
-        <td style="@nedöst">
-            @item.Nederländerna_Österrike
-        </td>
-        <td style="@sveslo">
-            @item.Sverige_Slovakien
-        </td>
-        <td style="@krotje">
-            @item.Kroatien_Tjeckien
-        </td>
-        <td style="@engsko">
-            @item.England_Skottland
-        </td>
-        <td style="@ungfra">
-            @item.Ungern_Frankrike
-        </td>
-        <td style="@portys">
-            @item.Portugal_Tyskland
-        </td>
-        <td style="@spapol">
-            @item.Spanien_Polen
-        </td>
-        <td style="@itawal">
-            @item.Italien_Wales
-        </td>
-        <td style="@schtur">
-            @item.Schweiz_Turkiet
-        </td>
-        <td style="@norned">
-            @item.Nordmakedonien_Nederländerna
-        </td>
-        <td style="@ukröst">
-            @item.Ukraina_Österrike
-        </td>
-        <td style="@rysdan">
-            @item.Ryssland_Danmark
-        </td>
-        <td style="@finbel">
-            @item.Finland_Belgien
-        </td>
-        <td style="@tjeeng">
-            @item.Tjeckien_England
-        </td>
-        <td style="@krosko">
-            @item.Kroatien_Skottland
-        </td>
-        <td style="@slospa">
-            @item.Slovakien_Spaninen
-        </td>
-        <td style="@svepol">
-            @item.Sverige_Polen
-        </td>
-        <td style="@tysung">
-            @item.Tyskland_Ungern
-        </td>
-        <td style="@porfra">
-            @item.Portugal_Frankrike
-        </td>
-
-
+                @* - - - - - IndexCshtml_TrTd.txt - Code area starts - - - - - - -*@
+                @******** Note: Add this a good places:
+                <td>
+                    @item.Namn
+                </td>
+                <td>
+                    @item.Poäng
+                </td>
+                *@
+                <td style="@turita">
+                    @item.Turkiet_Italien
+                </td>
+                <td style="@walsch">
+                    @item.Wales_Schweiz
+                </td>
+                <td style="@danfin">
+                    @item.Danmark_Finland
+                </td>
+                <td style="@belrys">
+                    @item.Belgien_Ryssland
+                </td>
+                <td style="@engkro">
+                    @item.England_Kroatien
+                </td>
+                <td style="@östnor">
+                    @item.Österrike_Nordmakedonien
+                </td>
+                <td style="@nedukr">
+                    @item.Nederländerna_Ukraina
+                </td>
+                <td style="@skotje">
+                    @item.Skottland_Tjeckien
+                </td>
+                <td style="@polslo">
+                    @item.Polen_Slovakien
+                </td>
+                <td style="@spasve">
+                    @item.Spanien_Sverige
+                </td>
+                <td style="@ungpor">
+                    @item.Ungern_Portugal
+                </td>
+                <td style="@fratys">
+                    @item.Frankrike_Tyskland
+                </td>
+                <td style="@finrys">
+                    @item.Finland_Ryssland
+                </td>
+                <td style="@turwal">
+                    @item.Turkiet_Wales
+                </td>
+                <td style="@itasch">
+                    @item.Italien_Schweiz
+                </td>
+                <td style="@ukrnor">
+                    @item.Ukraina_Nordmakedonien
+                </td>
+                <td style="@danbel">
+                    @item.Danmark_Belgien
+                </td>
+                <td style="@nedöst">
+                    @item.Nederländerna_Österrike
+                </td>
+                <td style="@sveslo">
+                    @item.Sverige_Slovakien
+                </td>
+                <td style="@krotje">
+                    @item.Kroatien_Tjeckien
+                </td>
+                <td style="@engsko">
+                    @item.England_Skottland
+                </td>
+                <td style="@ungfra">
+                    @item.Ungern_Frankrike
+                </td>
+                <td style="@portys">
+                    @item.Portugal_Tyskland
+                </td>
+                <td style="@spapol">
+                    @item.Spanien_Polen
+                </td>
+                <td style="@itawal">
+                    @item.Italien_Wales
+                </td>
+                <td style="@schtur">
+                    @item.Schweiz_Turkiet
+                </td>
+                <td style="@norned">
+                    @item.Nordmakedonien_Nederländerna
+                </td>
+                <td style="@ukröst">
+                    @item.Ukraina_Österrike
+                </td>
+                <td style="@rysdan">
+                    @item.Ryssland_Danmark
+                </td>
+                <td style="@finbel">
+                    @item.Finland_Belgien
+                </td>
+                <td style="@tjeeng">
+                    @item.Tjeckien_England
+                </td>
+                <td style="@krosko">
+                    @item.Kroatien_Skottland
+                </td>
+                <td style="@slospa">
+                    @item.Slovakien_Spaninen
+                </td>
+                <td style="@svepol">
+                    @item.Sverige_Polen
+                </td>
+                <td style="@tysung">
+                    @item.Tyskland_Ungern
+                </td>
+                <td style="@porfra">
+                    @item.Portugal_Frankrike
+                </td>
 
 
 
-        @* - - - - - Index.cshtml_TrTd.txt - Code area ends - - - - - - -*@
 
-    </tr>
-        }
-    </table>
-</div>
+
+                @* - - - - - Index.cshtml_TrTd.txt - Code area ends - - - - - - -*@
+
+            </tr>
+            }
+        </table>
+    </div>
 
 

@@ -29,13 +29,8 @@ namespace Fotbollstips.Controllers
                 return View("PreTournament", tipsData);
             }
 
-            var returnList = new List<TipsDataDisplay>();
-
-            foreach (var data in tipsData)
-            {
-                returnList.Add(new TipsDataDisplay(data));
-            }
-
+            var returnList = BusinessLogic.KneadTheData(tipsData);
+            
             return View(returnList.ToList());
         }
 

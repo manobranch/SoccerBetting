@@ -17,16 +17,8 @@ namespace Fotbollstips.Logic
                 // Get raw data
                 List<TipsData> rawData = GetTipsRawData();
 
-                // Calculate points
-                List<TipsData> calculatedPoints = CalculatePoints(rawData);
 
-                // Sort list by points
-                List<TipsData> sortedList = calculatedPoints.OrderByDescending(o => o.Poäng).ToList();
-
-                // Manipulate text string 
-                List<TipsData> returnList = ManipulateTextStrings(sortedList);
-
-                return returnList;
+                return rawData;
             }
             catch (Exception e)
             {
@@ -107,80 +99,182 @@ namespace Fotbollstips.Logic
         }
 
 
-        private static List<TipsData> CalculatePoints(List<TipsData> rows)
+        public static List<TipsDataDisplay> CalculatePoints(List<TipsDataDisplay> rows)
         {
             var correct = (from hits in rows
                            where hits.Namn == RATT_SVAR
                            select hits).FirstOrDefault();
 
-            rows = (from hits in rows
-                    select hits).ToList();
-
             foreach (var row in rows)
             {
-                if (row.Namn == RATT_SVAR)
-                {
-                    row.Poäng = 39;
-                    continue;
-                }
                 int points = 0;
+                Tuple<int, string> theTuple;
 
                 #region compare games
 
                 // - - - - - DataLogic_CalculatePoints.txt - Code area starts - - - - - - - 
-                points += CalculateGamePoints(row.Turkiet_Italien, correct.Turkiet_Italien);
-                points += CalculateGamePoints(row.Wales_Schweiz, correct.Wales_Schweiz);
-                points += CalculateGamePoints(row.Danmark_Finland, correct.Danmark_Finland);
-                points += CalculateGamePoints(row.Belgien_Ryssland, correct.Belgien_Ryssland);
-                points += CalculateGamePoints(row.England_Kroatien, correct.England_Kroatien);
-                points += CalculateGamePoints(row.Österrike_Nordmakedonien, correct.Österrike_Nordmakedonien);
-                points += CalculateGamePoints(row.Nederländerna_Ukraina, correct.Nederländerna_Ukraina);
-                points += CalculateGamePoints(row.Skottland_Tjeckien, correct.Skottland_Tjeckien);
-                points += CalculateGamePoints(row.Polen_Slovakien, correct.Polen_Slovakien);
-                points += CalculateGamePoints(row.Spanien_Sverige, correct.Spanien_Sverige);
-                points += CalculateGamePoints(row.Ungern_Portugal, correct.Ungern_Portugal);
-                points += CalculateGamePoints(row.Frankrike_Tyskland, correct.Frankrike_Tyskland);
-                points += CalculateGamePoints(row.Finland_Ryssland, correct.Finland_Ryssland);
-                points += CalculateGamePoints(row.Turkiet_Wales, correct.Turkiet_Wales);
-                points += CalculateGamePoints(row.Italien_Schweiz, correct.Italien_Schweiz);
-                points += CalculateGamePoints(row.Ukraina_Nordmakedonien, correct.Ukraina_Nordmakedonien);
-                points += CalculateGamePoints(row.Danmark_Belgien, correct.Danmark_Belgien);
-                points += CalculateGamePoints(row.Nederländerna_Österrike, correct.Nederländerna_Österrike);
-                points += CalculateGamePoints(row.Sverige_Slovakien, correct.Sverige_Slovakien);
-                points += CalculateGamePoints(row.Kroatien_Tjeckien, correct.Kroatien_Tjeckien);
-                points += CalculateGamePoints(row.England_Skottland, correct.England_Skottland);
-                points += CalculateGamePoints(row.Ungern_Frankrike, correct.Ungern_Frankrike);
-                points += CalculateGamePoints(row.Portugal_Tyskland, correct.Portugal_Tyskland);
-                points += CalculateGamePoints(row.Spanien_Polen, correct.Spanien_Polen);
-                points += CalculateGamePoints(row.Italien_Wales, correct.Italien_Wales);
-                points += CalculateGamePoints(row.Schweiz_Turkiet, correct.Schweiz_Turkiet);
-                points += CalculateGamePoints(row.Nordmakedonien_Nederländerna, correct.Nordmakedonien_Nederländerna);
-                points += CalculateGamePoints(row.Ukraina_Österrike, correct.Ukraina_Österrike);
-                points += CalculateGamePoints(row.Ryssland_Danmark, correct.Ryssland_Danmark);
-                points += CalculateGamePoints(row.Finland_Belgien, correct.Finland_Belgien);
-                points += CalculateGamePoints(row.Tjeckien_England, correct.Tjeckien_England);
-                points += CalculateGamePoints(row.Kroatien_Skottland, correct.Kroatien_Skottland);
-                points += CalculateGamePoints(row.Slovakien_Spaninen, correct.Slovakien_Spaninen);
-                points += CalculateGamePoints(row.Sverige_Polen, correct.Sverige_Polen);
-                points += CalculateGamePoints(row.Tyskland_Ungern, correct.Tyskland_Ungern);
-                points += CalculateGamePoints(row.Portugal_Frankrike, correct.Portugal_Frankrike);
+                theTuple = CalculateGamePoints(row.Turkiet_Italien, correct.Turkiet_Italien);
+                points += theTuple.Item1;
+                row.Turkiet_Italien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Wales_Schweiz, correct.Wales_Schweiz);
+                points += theTuple.Item1;
+                row.Wales_Schweiz_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Danmark_Finland, correct.Danmark_Finland);
+                points += theTuple.Item1;
+                row.Danmark_Finland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Belgien_Ryssland, correct.Belgien_Ryssland);
+                points += theTuple.Item1;
+                row.Belgien_Ryssland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.England_Kroatien, correct.England_Kroatien);
+                points += theTuple.Item1;
+                row.England_Kroatien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Österrike_Nordmakedonien, correct.Österrike_Nordmakedonien);
+                points += theTuple.Item1;
+                row.Österrike_Nordmakedonien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Nederländerna_Ukraina, correct.Nederländerna_Ukraina);
+                points += theTuple.Item1;
+                row.Nederländerna_Ukraina_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Skottland_Tjeckien, correct.Skottland_Tjeckien);
+                points += theTuple.Item1;
+                row.Skottland_Tjeckien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Polen_Slovakien, correct.Polen_Slovakien);
+                points += theTuple.Item1;
+                row.Polen_Slovakien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Spanien_Sverige, correct.Spanien_Sverige);
+                points += theTuple.Item1;
+                row.Spanien_Sverige_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Ungern_Portugal, correct.Ungern_Portugal);
+                points += theTuple.Item1;
+                row.Ungern_Portugal_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Frankrike_Tyskland, correct.Frankrike_Tyskland);
+                points += theTuple.Item1;
+                row.Frankrike_Tyskland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Finland_Ryssland, correct.Finland_Ryssland);
+                points += theTuple.Item1;
+                row.Finland_Ryssland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Turkiet_Wales, correct.Turkiet_Wales);
+                points += theTuple.Item1;
+                row.Turkiet_Wales_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Italien_Schweiz, correct.Italien_Schweiz);
+                points += theTuple.Item1;
+                row.Italien_Schweiz_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Ukraina_Nordmakedonien, correct.Ukraina_Nordmakedonien);
+                points += theTuple.Item1;
+                row.Ukraina_Nordmakedonien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Danmark_Belgien, correct.Danmark_Belgien);
+                points += theTuple.Item1;
+                row.Danmark_Belgien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Nederländerna_Österrike, correct.Nederländerna_Österrike);
+                points += theTuple.Item1;
+                row.Nederländerna_Österrike_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Sverige_Slovakien, correct.Sverige_Slovakien);
+                points += theTuple.Item1;
+                row.Sverige_Slovakien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Kroatien_Tjeckien, correct.Kroatien_Tjeckien);
+                points += theTuple.Item1;
+                row.Kroatien_Tjeckien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.England_Skottland, correct.England_Skottland);
+                points += theTuple.Item1;
+                row.England_Skottland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Ungern_Frankrike, correct.Ungern_Frankrike);
+                points += theTuple.Item1;
+                row.Ungern_Frankrike_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Portugal_Tyskland, correct.Portugal_Tyskland);
+                points += theTuple.Item1;
+                row.Portugal_Tyskland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Spanien_Polen, correct.Spanien_Polen);
+                points += theTuple.Item1;
+                row.Spanien_Polen_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Italien_Wales, correct.Italien_Wales);
+                points += theTuple.Item1;
+                row.Italien_Wales_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Schweiz_Turkiet, correct.Schweiz_Turkiet);
+                points += theTuple.Item1;
+                row.Schweiz_Turkiet_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Nordmakedonien_Nederländerna, correct.Nordmakedonien_Nederländerna);
+                points += theTuple.Item1;
+                row.Nordmakedonien_Nederländerna_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Ukraina_Österrike, correct.Ukraina_Österrike);
+                points += theTuple.Item1;
+                row.Ukraina_Österrike_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Ryssland_Danmark, correct.Ryssland_Danmark);
+                points += theTuple.Item1;
+                row.Ryssland_Danmark_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Finland_Belgien, correct.Finland_Belgien);
+                points += theTuple.Item1;
+                row.Finland_Belgien_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Tjeckien_England, correct.Tjeckien_England);
+                points += theTuple.Item1;
+                row.Tjeckien_England_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Kroatien_Skottland, correct.Kroatien_Skottland);
+                points += theTuple.Item1;
+                row.Kroatien_Skottland_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Slovakien_Spaninen, correct.Slovakien_Spaninen);
+                points += theTuple.Item1;
+                row.Slovakien_Spaninen_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Sverige_Polen, correct.Sverige_Polen);
+                points += theTuple.Item1;
+                row.Sverige_Polen_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Tyskland_Ungern, correct.Tyskland_Ungern);
+                points += theTuple.Item1;
+                row.Tyskland_Ungern_Color = theTuple.Item2;
+
+                theTuple = CalculateGamePoints(row.Portugal_Frankrike, correct.Portugal_Frankrike);
+                points += theTuple.Item1;
+                row.Portugal_Frankrike_Color = theTuple.Item2;
+
+
 
 
                 // - - - - - DataLogic_CalculatePoints.txt - Code area ends - - - - - - - 
 
+                theTuple = CompareFinal(row.Finallag1, correct.Finallag1);
+                points += theTuple.Item1;
+                row.Finallag1_Color = theTuple.Item2;
 
-                if (CompareFinal(row.Finallag1, correct.Finallag1))
-                    points++;
+                theTuple = CompareFinal(row.Finallag2, correct.Finallag2);
+                points += theTuple.Item1;
+                row.Finallag2_Color = theTuple.Item2;
 
-                if (CompareFinal(row.Finallag2, correct.Finallag2))
-                    points++;
-
-                if (CompareFinal(row.Vinnare, correct.Vinnare))
-                    points++;
+                theTuple = CompareFinal(row.Vinnare, correct.Vinnare);
+                points += theTuple.Item1;
+                row.Vinnare_Color = theTuple.Item2;
 
                 #endregion
-
-
 
                 row.Poäng = points;
             }
@@ -188,26 +282,32 @@ namespace Fotbollstips.Logic
             return rows;
         }
 
-        private static int CalculateGamePoints(string row, string corr)
+        private static Tuple<int, string> CalculateGamePoints(string row, string corr)
         {
-            if (corr.Length != 2)
-                return 0;
-
             if (row == corr)
-                return 3;
+                return Tuple.Create(3, "background-color:#00D600");
 
-            if (CorrectWinner(row, corr))
-                return 1;
+            else if (CorrectWinner(row, corr))
+                return Tuple.Create(1, "background-color:#b3ffb3");
 
-            return 0;
+            else
+                return Tuple.Create(0, string.Empty);
         }
 
         private static bool CorrectWinner(string row, string corr)
         {
-            var rowWinner = GetWinner(row);
-            var corrWinner = GetWinner(corr);
+            try
+            {
+                var rowWinner = GetWinner(row);
+                var corrWinner = GetWinner(corr);
 
-            return rowWinner == corrWinner;
+                return rowWinner == corrWinner;
+
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private static WinningTeam GetWinner(string result)
@@ -230,7 +330,7 @@ namespace Fotbollstips.Logic
             Away,
         }
 
-        private static bool CompareFinal(string finalTeam, string correctAnswer)
+        private static Tuple<int, string> CompareFinal(string finalTeam, string correctAnswer)
         {
             var correctTeams = correctAnswer.Split('-').ToList();
 
@@ -238,14 +338,14 @@ namespace Fotbollstips.Logic
             {
                 if (item.ToString() == finalTeam)
                 {
-                    return true;
+                    return Tuple.Create(3, "background-color:#00D600");
                 }
             }
 
-            return false;
+            return Tuple.Create(0, string.Empty);
         }
 
-        private static List<TipsData> ManipulateTextStrings(List<TipsData> data)
+        public static List<TipsDataDisplay> ManipulateTextStrings(List<TipsDataDisplay> data)
         {
             foreach (var item in data)
             {

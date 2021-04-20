@@ -316,7 +316,7 @@ namespace CodeGenerator
 
         private static void IndexCshtml_ForeachItemInModel(List<string> games)
         {
-            //var argisl = (item.Argentina_Island == Model[0].Argentina_Island) ? "color:#00D600" : "";
+            //var östnor = item.Österrike_Nordmakedonien_Color;
             string filename = FOLDERPATH + "IndexCshtml_ForeachItemInModel.txt";
             using (var tw = new StreamWriter(filename, true))
             {
@@ -327,7 +327,7 @@ namespace CodeGenerator
                     string firstTeam = split[0].Substring(0, 3).ToLower();
                     string secondTeam = split[1].Substring(0, 3).ToLower();
 
-                    tw.WriteLine($"var {firstTeam}{secondTeam} = (item.{game} == Model[0].{game}) ? \"color:#00D600\" : \"\";");
+                    tw.WriteLine($"var {firstTeam}{secondTeam} = item.{game}_Color;");
                 }
             }
         }
@@ -357,13 +357,14 @@ namespace CodeGenerator
 
         private static void TipsDataDisplay_Constructor(List<string> games)
         {
-            //Ryssland_Saudiarabien = td.Ryssland_Saudiarabien;
+            //Ryssland_Saudiarabien_Color = string.Empty;
             string filename = FOLDERPATH + "TipsDataDisplay_Constructor.txt";
             using (var tw = new StreamWriter(filename, true))
             {
                 foreach (var game in games)
                 {
                     tw.WriteLine($"{game} = td.{game};");
+                    tw.WriteLine($"{game}_Color = string.Empty;");
                 }
             }
         }
@@ -371,12 +372,14 @@ namespace CodeGenerator
         private static void TipsDataDisplay_Properties(List<string> games)
         {
             //public string Ryssland_Saudiarabien { get; set; }
+            //public string Ryssland_Saudiarabien_Color { get; set; }
             string filename = FOLDERPATH + "TipsDataDisplay_Properties.txt";
             using (var tw = new StreamWriter(filename, true))
             {
                 foreach (var game in games)
                 {
                     tw.WriteLine($"public string {game} {{ get; set; }}");
+                    tw.WriteLine($"public string {game}_Color {{ get; set; }}");
                 }
             }
         }
@@ -441,17 +444,18 @@ namespace CodeGenerator
 
         private static void DataLogic_CalculatePoints(List<string> games)
         {
-            //if (item.Argentina_Island == correct.Argentina_Island)
-            //    points++;
-            //
+            // theTuple = CalculateGamePoints(row.Turkiet_Italien, correct.Turkiet_Italien);
+            // points += theTuple.Item1;
+            // row.Turkiet_Italien_Color = theTuple.Item2;
 
             string filename = FOLDERPATH + "DataLogic_CalculatePoints.txt";
             using (var tw = new StreamWriter(filename, true))
             {
                 foreach (var game in games)
                 {
-                    tw.WriteLine($"if (item.{game} == correct.{game})");
-                    tw.WriteLine($"points++;");
+                    tw.WriteLine($"theTuple = CalculateGamePoints(row.{game}, correct.{game});");
+                    tw.WriteLine($"points += theTuple.Item1;");
+                    tw.WriteLine($"row.{game}_Color = theTuple.Item2;");
                     tw.WriteLine($"");
                 }
             }
