@@ -562,8 +562,10 @@ namespace Fotbollstips.Logic
             {
                 SaveTipsDataToLogFile(tipsData);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, $"Exception in SaveNewTipsData: {e.Message}", "SaveTipsDataToLogFile");
+
                 // Do nothing, since log to textfile does not work
             }
 

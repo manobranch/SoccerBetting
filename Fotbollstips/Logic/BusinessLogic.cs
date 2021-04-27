@@ -37,6 +37,9 @@ namespace Fotbollstips.Logic
         {
             try
             {
+                var theName = $"Before any save: {col["myname"]}";
+                Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, theName, "ParticipateInTips");
+
                 TipsData newTipsData = new TipsData()
                 {
                     EntryDate = DateTime.Now,
@@ -105,9 +108,13 @@ namespace Fotbollstips.Logic
 
                 if (saveResultOfTipsData.SuccessedSave)
                 {
+                    Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "SuccessedSave, before PdfLogic", "ParticipateInTips");
+
                     // Create PDF
                     var pdfWorder = new PdfLogic();
                     PdfDocument pdfDocument = pdfWorder.SaveTipsDatas(newTipsData);
+                    
+                    Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "SuccessedSave, after PdfLogic, before Blob Storager", "ParticipateInTips");
 
                     #region During development
                     //// During development - Store locally on computer
@@ -125,6 +132,8 @@ namespace Fotbollstips.Logic
                         // Store in blob storage
                         string imagePath = storageWorker.SavePDF(pdfDocument, newTipsData.Namn);
 
+                        Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "Saved to Blob Storage", "ParticipateInTips");
+
                         // Save file path to PDF
                         TipsPathToPDF pathToPdf = new TipsPathToPDF()
                         {
@@ -132,7 +141,11 @@ namespace Fotbollstips.Logic
                             TipsData_SoftFK = saveResultOfTipsData.IdOfTipsdata
                         };
 
+                        Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "Before saving image path", "ParticipateInTips");
+
                         var imagePathSaved = DataLogic.SaveNewTipsDataImagePath(pathToPdf);
+
+                        Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "After saving image path, before email", "ParticipateInTips");
 
                         //// Send email
                         //string getEmail = col["getemail"];
@@ -140,10 +153,19 @@ namespace Fotbollstips.Logic
                         ////MNTODO Ta bort if vid deploy
                         //if (getEmail.ToLower() == "ja")
                         //{
+
+
                         var mailWorker = new MailLogic();
                         emailSent = mailWorker.SendMail(newTipsData.Email, pathToPdf.PathToPDF, col["myname"]);
+
+                        Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "After sending email", "ParticipateInTips");
+
                         //}
                     }
+                }
+                else
+                {
+                    Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "Not success save, get to Else", "ParticipateInTips");
                 }
 
                 //var sendSms = GetRandomValue("SendSms");
@@ -160,7 +182,7 @@ namespace Fotbollstips.Logic
             }
             catch (Exception e)
             {
-                Log4NetLogic.Log(Log4NetLogic.LogLevel.ERROR, "An error in: ", "ParticipateInTips", e);
+                Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, "An error in: ", e.Message);
 
                 return new ParticipateResult(false, false, "");
             }

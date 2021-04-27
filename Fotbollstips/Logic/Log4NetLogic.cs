@@ -13,6 +13,7 @@ namespace Fotbollstips.Logic
 
         public static void Log(LogLevel level, string logText, string caller)
         {
+            InsightsLogic.TrackEvent(logText);
             Log(level, logText, caller, null);
         }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 
@@ -19,6 +20,7 @@ namespace Fotbollstips.Logic
             {
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpServer.UseDefaultCredentials = false;
 
                 mail.From = new MailAddress("masterskapstips@gmail.com");
                 mail.To.Add(emailAddress);
@@ -29,9 +31,8 @@ namespace Fotbollstips.Logic
                 SmtpServer.Port = 587;
                 string password = ConfigurationManager.AppSettings["MailPassword"];
 
-                SmtpServer.Credentials = new System.Net.NetworkCredential("masterskapstips", password);
+                SmtpServer.Credentials = new System.Net.NetworkCredential("masterskapstips@gmail.com", password);
                 SmtpServer.EnableSsl = true;
-
                 SmtpServer.Send(mail);
 
                 string logText = string.Format("Email sent to: {0}, name: {1}", emailAddress, name);
@@ -40,6 +41,8 @@ namespace Fotbollstips.Logic
             }
             catch (Exception e)
             {
+                Log4NetLogic.Log(Log4NetLogic.LogLevel.INFO, $"In catch of sending email: {e.Message}", "ParticipateInTips");
+
                 string logText = string.Format("Email is: {0}. Name: {1}.", emailAddress, name);
                 Log4NetLogic.Log(Log4NetLogic.LogLevel.ERROR, logText, "SendMail", e);
 
