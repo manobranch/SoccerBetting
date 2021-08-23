@@ -5,7 +5,8 @@
 
     <div class="jumbotron">
         <h2>Resultat för EM-tipset 2021</h2>
-        <p>Totalt är xx rader inlämnade vilket innebär yy kr till vinnaren.</p>
+        <p>Totalt är 43 rader inlämnade vilket innebär 2150 kr till vinnaren.</p>
+        <p>Rätt finallag ger 3 poäng, rätt vinnare av finalen ger 3 poäng. Totalt 9 poäng för rätt finallag och rätt vinnare.</p>
         <div>
             <p>Färgförklaring:</p>
             <table>
@@ -81,6 +82,12 @@
                     Fra-Tys
                 </th>
                 <th>
+                    Namn
+                </th>
+                <th>
+                    Poäng
+                </th>
+                <th>
                     Fin-Rys
                 </th>
                 <th>
@@ -115,6 +122,12 @@
                 </th>
                 <th>
                     Spa-Pol
+                </th>
+                <th>
+                    Namn
+                </th>
+                <th>
+                    Poäng
                 </th>
                 <th>
                     Ita-Wal
@@ -152,7 +165,12 @@
                 <th>
                     Por-Fra
                 </th>
-
+                <th>
+                    Namn
+                </th>
+                <th>
+                    Poäng
+                </th>
 
 
 
@@ -211,148 +229,165 @@
 
             // - - - - - Index.cshtml_ForeachItemInModel.txt - Code area ends - - - - - - -
 
-            <tr>
-                <td>
-                    @item.Namn
-                </td>
-                <td>
-                    @item.Poäng
-                </td>
-                <td style="@final1">
-                    @item.Finallag1
-                </td>
-                <td style="@final2">
-                    @item.Finallag2
-                </td>
-                <td style="@vinnare">
-                    @item.Vinnare
-                </td>
+        <tr>
+            <td>
+                @item.Namn
+            </td>
+            <td>
+                @item.Poäng
+            </td>
+            <td style="@final1">
+                @item.Finallag1
+            </td>
+            <td style="@final2">
+                @item.Finallag2
+            </td>
+            <td style="@vinnare">
+                @item.Vinnare
+            </td>
 
-                @* - - - - - IndexCshtml_TrTd.txt - Code area starts - - - - - - -*@
-                @******** Note: Add this a good places:
-                <td>
-                    @item.Namn
-                </td>
-                <td>
-                    @item.Poäng
-                </td>
-                *@
-                <td style="@turita">
-                    @item.Turkiet_Italien
-                </td>
-                <td style="@walsch">
-                    @item.Wales_Schweiz
-                </td>
-                <td style="@danfin">
-                    @item.Danmark_Finland
-                </td>
-                <td style="@belrys">
-                    @item.Belgien_Ryssland
-                </td>
-                <td style="@engkro">
-                    @item.England_Kroatien
-                </td>
-                <td style="@östnor">
-                    @item.Österrike_Nordmakedonien
-                </td>
-                <td style="@nedukr">
-                    @item.Nederländerna_Ukraina
-                </td>
-                <td style="@skotje">
-                    @item.Skottland_Tjeckien
-                </td>
-                <td style="@polslo">
-                    @item.Polen_Slovakien
-                </td>
-                <td style="@spasve">
-                    @item.Spanien_Sverige
-                </td>
-                <td style="@ungpor">
-                    @item.Ungern_Portugal
-                </td>
-                <td style="@fratys">
-                    @item.Frankrike_Tyskland
-                </td>
-                <td style="@finrys">
-                    @item.Finland_Ryssland
-                </td>
-                <td style="@turwal">
-                    @item.Turkiet_Wales
-                </td>
-                <td style="@itasch">
-                    @item.Italien_Schweiz
-                </td>
-                <td style="@ukrnor">
-                    @item.Ukraina_Nordmakedonien
-                </td>
-                <td style="@danbel">
-                    @item.Danmark_Belgien
-                </td>
-                <td style="@nedöst">
-                    @item.Nederländerna_Österrike
-                </td>
-                <td style="@sveslo">
-                    @item.Sverige_Slovakien
-                </td>
-                <td style="@krotje">
-                    @item.Kroatien_Tjeckien
-                </td>
-                <td style="@engsko">
-                    @item.England_Skottland
-                </td>
-                <td style="@ungfra">
-                    @item.Ungern_Frankrike
-                </td>
-                <td style="@portys">
-                    @item.Portugal_Tyskland
-                </td>
-                <td style="@spapol">
-                    @item.Spanien_Polen
-                </td>
-                <td style="@itawal">
-                    @item.Italien_Wales
-                </td>
-                <td style="@schtur">
-                    @item.Schweiz_Turkiet
-                </td>
-                <td style="@norned">
-                    @item.Nordmakedonien_Nederländerna
-                </td>
-                <td style="@ukröst">
-                    @item.Ukraina_Österrike
-                </td>
-                <td style="@rysdan">
-                    @item.Ryssland_Danmark
-                </td>
-                <td style="@finbel">
-                    @item.Finland_Belgien
-                </td>
-                <td style="@tjeeng">
-                    @item.Tjeckien_England
-                </td>
-                <td style="@krosko">
-                    @item.Kroatien_Skottland
-                </td>
-                <td style="@slospa">
-                    @item.Slovakien_Spaninen
-                </td>
-                <td style="@svepol">
-                    @item.Sverige_Polen
-                </td>
-                <td style="@tysung">
-                    @item.Tyskland_Ungern
-                </td>
-                <td style="@porfra">
-                    @item.Portugal_Frankrike
-                </td>
+            @* - - - - - IndexCshtml_TrTd.txt - Code area starts - - - - - - -*@
+            @******** Note: Add this a good places:
+        <td>
+            @item.Namn
+        </td>
+        <td>
+            @item.Poäng
+        </td>
+            *@
+            <td style="@turita">
+                @item.Turkiet_Italien
+            </td>
+            <td style="@walsch">
+                @item.Wales_Schweiz
+            </td>
+            <td style="@danfin">
+                @item.Danmark_Finland
+            </td>
+            <td style="@belrys">
+                @item.Belgien_Ryssland
+            </td>
+            <td style="@engkro">
+                @item.England_Kroatien
+            </td>
+            <td style="@östnor">
+                @item.Österrike_Nordmakedonien
+            </td>
+            <td style="@nedukr">
+                @item.Nederländerna_Ukraina
+            </td>
+            <td style="@skotje">
+                @item.Skottland_Tjeckien
+            </td>
+            <td style="@polslo">
+                @item.Polen_Slovakien
+            </td>
+            <td style="@spasve">
+                @item.Spanien_Sverige
+            </td>
+            <td style="@ungpor">
+                @item.Ungern_Portugal
+            </td>
+            <td style="@fratys">
+                @item.Frankrike_Tyskland
+            </td>
+            <td>
+                @item.Namn
+            </td>
+            <td>
+                @item.Poäng
+            </td>
+            <td style="@finrys">
+                @item.Finland_Ryssland
+            </td>
+            <td style="@turwal">
+                @item.Turkiet_Wales
+            </td>
+            <td style="@itasch">
+                @item.Italien_Schweiz
+            </td>
+            <td style="@ukrnor">
+                @item.Ukraina_Nordmakedonien
+            </td>
+            <td style="@danbel">
+                @item.Danmark_Belgien
+            </td>
+            <td style="@nedöst">
+                @item.Nederländerna_Österrike
+            </td>
+            <td style="@sveslo">
+                @item.Sverige_Slovakien
+            </td>
+            <td style="@krotje">
+                @item.Kroatien_Tjeckien
+            </td>
+            <td style="@engsko">
+                @item.England_Skottland
+            </td>
+            <td style="@ungfra">
+                @item.Ungern_Frankrike
+            </td>
+            <td style="@portys">
+                @item.Portugal_Tyskland
+            </td>
+            <td style="@spapol">
+                @item.Spanien_Polen
+            </td>
+            <td>
+                @item.Namn
+            </td>
+            <td>
+                @item.Poäng
+            </td>
+            <td style="@itawal">
+                @item.Italien_Wales
+            </td>
+            <td style="@schtur">
+                @item.Schweiz_Turkiet
+            </td>
+            <td style="@norned">
+                @item.Nordmakedonien_Nederländerna
+            </td>
+            <td style="@ukröst">
+                @item.Ukraina_Österrike
+            </td>
+            <td style="@rysdan">
+                @item.Ryssland_Danmark
+            </td>
+            <td style="@finbel">
+                @item.Finland_Belgien
+            </td>
+            <td style="@tjeeng">
+                @item.Tjeckien_England
+            </td>
+            <td style="@krosko">
+                @item.Kroatien_Skottland
+            </td>
+            <td style="@slospa">
+                @item.Slovakien_Spaninen
+            </td>
+            <td style="@svepol">
+                @item.Sverige_Polen
+            </td>
+            <td style="@tysung">
+                @item.Tyskland_Ungern
+            </td>
+            <td style="@porfra">
+                @item.Portugal_Frankrike
+            </td>
+            <td>
+                @item.Namn
+            </td>
+            <td>
+                @item.Poäng
+            </td>
 
 
 
 
+            @* - - - - - Index.cshtml_TrTd.txt - Code area ends - - - - - - -*@
 
-                @* - - - - - Index.cshtml_TrTd.txt - Code area ends - - - - - - -*@
-
-            </tr>
+        </tr>
             }
         </table>
     </div>
